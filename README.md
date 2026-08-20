@@ -26,7 +26,6 @@
   <a href="docs/fa/FAQ.md"><strong>FAQ فارسی</strong></a> ·
   <a href="https://net.ivaworks.site/"><strong>رادار شبکه</strong></a> ·
   <a href="https://t.me/Ivaworkersup"><strong>پشتیبانی</strong></a> ·
-  <a href="docs/fa/GITHUB_PAGES.md"><strong>فعال‌سازی سایت پروژه</strong></a>
 </p>
 
 <div dir="rtl" align="right">
@@ -161,10 +160,6 @@
 - برای خطای برنامه از قالب **Bug report** در Issues استفاده کنید؛ هیچ توکن، رمز یا اطلاعات حسابی را پیوست نکنید.
 - برای مشکل نصب یا حساب از [@Ivaworkersup](https://t.me/Ivaworkersup) کمک بگیرید.
 - آسیب‌پذیری امنیتی را عمومی منتشر نکنید؛ روش گزارش در [SECURITY.md](SECURITY.md) آمده است.
-
-## راهنمای مدیر ریپو
-
-اگر مسئول انتشار پروژه هستید، [راهنمای قدم‌به‌قدم ساخت ریپو و انتشار نسخه](docs/fa/GITHUB_SETUP.md) و [راهنمای فعال‌سازی سایت GitHub Pages](docs/fa/GITHUB_PAGES.md) را بخوانید. سایت حرفه‌ای سه‌زبانه در `docs/index.html` قرار دارد و با انتخاب `main /docs` در تنظیمات Pages منتشر می‌شود. فهرست ساختار پوشه‌ها در [docs/README.md](docs/README.md) و قالب سیاست حریم خصوصی در [docs/PRIVACY_POLICY_TEMPLATE.md](docs/PRIVACY_POLICY_TEMPLATE.md) قرار دارد.
 
 ## مجوز و مالکیت
 
