@@ -1,0 +1,25 @@
+{
+  "product": "IVA Panel",
+  "version": "2.0.0",
+  "publishedAt": "YYYY-MM-DDTHH:MM:SSZ",
+  "channel": "stable",
+  "minimumPanelVersion": "TO_BE_CONFIRMED",
+  "compatibility": {
+    "androidMinimum": "Android 10 (API 29)",
+    "windowsArchitecture": "x64"
+  },
+  "assets": [
+    {
+      "platform": "android",
+      "architecture": "universal",
+      "file": "app-universal-release.apk",
+      "sha256": "REPLACE_WITH_64_HEX_CHARACTERS"
+    },
+    {
+      "platform": "windows",
+      "architecture": "x64",
+      "file": "IVA-VPN-X.Y.Z-Setup.exe",
+      "sha256": "REPLACE_WITH_64_HEX_CHARACTERS"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+REPLACE_WITH_SHA256  app-universal-release.apk
+REPLACE_WITH_SHA256  IVA-VPN-X.Y.Z-Setup.exe

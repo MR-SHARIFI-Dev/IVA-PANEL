@@ -1,0 +1,27 @@
+{
+  "product": "IVA Panel Apps",
+  "releaseTag": "v1.0.1",
+  "preparedAt": "2026-08-20",
+  "channel": "stable",
+  "webInstaller": "https://install.ivaworks.site/",
+  "compatibility": {
+    "androidMinimum": "Android 10 (API 29)",
+    "windowsArchitecture": "x64"
+  },
+  "assets": [
+    {
+      "platform": "android",
+      "architecture": "universal",
+      "file": "app-universal-release.apk",
+      "sizeBytes": 149737036,
+      "sha256": "4b8f7f975c213fcff25559ff7a1f7333d7993b9b677c98716df35932d8a48594"
+    },
+    {
+      "platform": "windows",
+      "architecture": "x64",
+      "file": "IVA-VPN-1.0.1-Setup.exe",
+      "sizeBytes": 67786425,
+      "sha256": "1c51859c47d150815c5f85684ed5c63c4ac5ab2e8abab4f43bcedd3e8b3e8edf"
+    }
+  ]
+}
