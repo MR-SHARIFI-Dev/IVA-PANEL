@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/posters/iva-panel-hero.png" alt="IVA Panel" width="100%">
+  <img src="assets/posters/iva-panel-hero-v2.png" alt="IVA | آیوا" width="100%">
 </p>
 
 <p align="center">
@@ -8,20 +8,52 @@
   <a href="README.ru.md">Русский</a>
 </p>
 
+<p align="center">
+  <img alt="License" src="https://img.shields.io/badge/license-Proprietary-7c3aed">
+  <img alt="Cloudflare Workers" src="https://img.shields.io/badge/platform-Cloudflare%20Workers-f38020">
+  <img alt="Windows" src="https://img.shields.io/badge/Windows-x64-2563eb">
+  <img alt="Android" src="https://img.shields.io/badge/Android-10%2B-22c55e">
+  <img alt="Languages" src="https://img.shields.io/badge/docs-FA%20%7C%20EN%20%7C%20RU-06b6d4">
+  <img alt="IVA Worker" src="https://img.shields.io/badge/IVA%20Worker-4.4.73-8b5cf6">
+  <img alt="Panel" src="https://img.shields.io/badge/Panel-10.7.59-0ea5e9">
+  <img alt="Installer" src="https://img.shields.io/badge/Installer-1.4.9-14b8a6">
+</p>
+
+<p align="center">
+  <a href="https://install.ivaworks.site/"><strong>Установка</strong></a> ·
+  <a href="../../releases"><strong>Приложения</strong></a> ·
+  <a href="docs/FEATURE_MATRIX.md"><strong>Все функции</strong></a> ·
+  <a href="docs/ru/FAQ.md"><strong>FAQ</strong></a> ·
+  <a href="https://net.ivaworks.site/"><strong>Сетевой радар</strong></a> ·
+  <a href="https://t.me/Ivaworkersup"><strong>Поддержка</strong></a>
+</p>
+
 # IVA Panel
 
 Официальный центр документации, загрузок и выпусков **IVA Panel** — профессиональной мультилокационной панели управления на базе Cloudflare Workers.
 
 > Это официальный репозиторий распространения и документации. Проприетарный исходный код IVA Panel здесь не публикуется.
 
-## Возможности
+## Почему IVA Panel?
 
-- Простая установка через [официальный веб-установщик](https://install.ivaworks.site/) или бота.
-- Работа на платформе Cloudflare Workers.
-- Управление несколькими локациями с глобальной поддержкой.
-- Отдельные приложения для Windows и Android.
-- Онлайн-радар состояния сервисов, трафика, задержки и сетевых сбоев.
-- Бесплатное использование на условиях, объявленных IVA Works.
+| Возможность | Что она даёт |
+|---|---|
+| ☁️ Архитектура Cloudflare Workers | Для самой панели не нужен отдельный VPS |
+| 🌍 Multi-Location | Несколько локаций и точек инфраструктуры в одной панели |
+| ⚡ Установка в один клик | Официальная установка через веб и Telegram |
+| 💾 Backup & Restore | Полное резервное копирование, восстановление и перенос |
+| 🤖 Управление Telegram | Официальная автоматизация установки и операций управления |
+| 🖥 Отдельные приложения | Android 10+ и Windows x64 |
+| 📡 Network Intelligence | Онлайн-радар статуса, задержки и сбоев |
+| 🌐 Три языка документации | Персидский, английский и русский в этом репозитории |
+
+## Текущие стабильные версии
+
+| IVA Worker | Panel | Installer | Канал | Выпуск UTC | Минимальная версия |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| `4.4.73` | `10.7.59` | `1.4.9` | `stable` | `2026-08-17 19:55` | `4.4.55` |
+
+Обновление не является обязательным. Полное сравнение более ста функций v1, v2 и v3 приведено в официальной **[матрице возможностей](docs/FEATURE_MATRIX.md)**, включая National Internet, Arvan CDN и Google Apps Script Relay в v3.
 
 ## Быстрая установка
 
@@ -48,7 +80,7 @@
 [Инструкция Android](apps/android/README.md) · [Инструкция Windows](apps/windows/README.md)
 
 <p align="center">
-  <img src="assets/posters/iva-apps-poster.png" alt="Приложения IVA Panel для Windows и Android" width="100%">
+  <img src="assets/posters/iva-apps-showcase-v2.png" alt="Приложения IVA | آیوا для Windows и Android" width="100%">
 </p>
 
 ## Реальные скриншоты приложений
@@ -73,7 +105,17 @@
 **[Открыть радар](https://net.ivaworks.site/)**
 
 <p align="center">
-  <img src="assets/posters/iva-network-radar.png" alt="IVA Network Intelligence" width="100%">
+  <img src="assets/posters/iva-network-radar-v2.png" alt="IVA | آیوا Network Intelligence" width="100%">
+</p>
+
+## Локальный FAQ на трёх языках
+
+Полный FAQ теперь хранится в репозитории и охватывает установку, безопасность, Multi-Location, Backup/Restore, приложения, Relay, Requests, ограничения и поддержку.
+
+**[Открыть FAQ на русском](docs/ru/FAQ.md)** · [فارسی](docs/fa/FAQ.md) · [English](docs/en/FAQ.md)
+
+<p align="center">
+  <a href="docs/ru/FAQ.md"><img src="assets/posters/iva-faq-v2.png" alt="IVA | آیوا FAQ" width="100%"></a>
 </p>
 
 ## Официальные ссылки
@@ -88,12 +130,12 @@
 | Поддержка | [@Ivaworkersup](https://t.me/Ivaworkersup) |
 | Группа пользователей | [@IVA_Panel_group](https://t.me/IVA_Panel_group) |
 | Чат вопросов и ответов | [@IVAPANELCHAT](https://t.me/IVAPANELCHAT) |
-| FAQ | [IVA Panel FAQ](https://telegra.ph/IVA-Panel--FAQ--%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D9%85%D8%AA%D8%AF%D8%A7%D9%88%D9%84-08-08-2) |
+| FAQ | [FAQ на русском в этом репозитории](docs/ru/FAQ.md) |
 | Интернет-радар | [net.ivaworks.site](https://net.ivaworks.site/) |
 
 ## Поддержка и сообщения об ошибках
 
-- Сначала прочитайте [FAQ](https://telegra.ph/IVA-Panel--FAQ--%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D9%85%D8%AA%D8%AF%D8%A7%D9%88%D9%84-08-08-2).
+- Сначала прочитайте [FAQ на русском](docs/ru/FAQ.md).
 - Для ошибок приложений используйте шаблон GitHub **Bug report**; не прикладывайте секреты или данные аккаунта.
 - По вопросам установки или аккаунта обращайтесь к [@Ivaworkersup](https://t.me/Ivaworkersup).
 - Не публикуйте уязвимости открыто; следуйте [SECURITY.md](SECURITY.md).

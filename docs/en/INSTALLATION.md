@@ -60,6 +60,6 @@ Current compatibility: **Android 10 or later** and **Windows 64-bit x64 only**.
 
 ## Troubleshooting
 
-- Check the [FAQ](https://telegra.ph/IVA-Panel--FAQ--%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D9%85%D8%AA%D8%AF%D8%A7%D9%88%D9%84-08-08-2) first.
+- Check the [English FAQ](FAQ.md) first.
 - Check network status on [IVA Radar](https://net.ivaworks.site/).
 - Contact [@Ivaworkersup](https://t.me/Ivaworkersup) if the problem remains; never send a token or password.

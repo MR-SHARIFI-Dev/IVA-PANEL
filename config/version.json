@@ -1,0 +1,11 @@
+{
+  "product": "IVA Worker",
+  "channel": "stable",
+  "version": "4.4.73",
+  "panel_version": "10.7.59",
+  "installer_version": "1.4.9",
+  "released": "2026-08-17T19:55:00Z",
+  "mandatory": false,
+  "minimum_version": "4.4.55"
+}
+

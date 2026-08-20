@@ -47,6 +47,6 @@ Download only the appropriate asset for your device and compare its SHA-256 valu
 
 ## Support
 
-- FAQ: https://telegra.ph/IVA-Panel--FAQ--%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D9%85%D8%AA%D8%AF%D8%A7%D9%88%D9%84-08-08-2
+- FAQ: see `docs/FAQ.md` in this repository
 - Support: https://t.me/Ivaworkersup
 - Radar: https://net.ivaworks.site/

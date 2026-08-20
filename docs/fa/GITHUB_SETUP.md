@@ -26,7 +26,7 @@
 
 1. کنار About روی چرخ‌دنده بزنید و Description، وب‌سایت `https://ivaworks.site/` و Topics را وارد کنید.
 2. به **Settings → General → Social preview** بروید.
-3. فایل `assets/posters/iva-panel-hero.png` را بارگذاری کنید.
+3. فایل `assets/posters/iva-panel-hero-v2.png` را بارگذاری کنید.
 4. در **Settings → General → Features** فقط قابلیت‌هایی را که لازم دارید روشن نگه دارید. Issues برای گزارش خطا مفید است.
 5. در **Settings → Branches** برای شاخهٔ `main` قانون محافظت بسازید تا حذف یا Push اشتباه کمتر شود.
 

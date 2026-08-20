@@ -23,7 +23,7 @@
 ## Профессиональное оформление
 
 1. В блоке About добавьте описание, сайт `https://ivaworks.site/` и темы.
-2. Откройте **Settings → General → Social preview** и загрузите `assets/posters/iva-panel-hero.png`.
+2. Откройте **Settings → General → Social preview** и загрузите `assets/posters/iva-panel-hero-v2.png`.
 3. Оставьте Issues включёнными для структурированных сообщений об ошибках.
 4. Создайте правило защиты ветки `main` в **Settings → Branches**.
 

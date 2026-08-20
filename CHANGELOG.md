@@ -12,6 +12,11 @@ All notable IVA Panel releases should be documented here. Use [Semantic Versioni
 - Privacy-clean Windows and Android screenshots with public IP addresses blurred.
 - Active web installer link: `https://install.ivaworks.site/`.
 - Compatibility details: Android 10+ and Windows x64 only.
+- A complete local FAQ in Persian, English, and Russian; external Telegraph dependency removed.
+- A stronger v2 visual system with bilingual `IVA | آیوا` hero, real-device application showcase, FAQ cover, and Network Intelligence radar.
+- Canonical v1/v2/v3 Feature Matrix with more than one hundred capabilities.
+- Stable release metadata for IVA Worker `4.4.73`, Panel `10.7.59`, and Installer `1.4.9`.
+- v3 National Internet relay, Arvan CDN route optimization, and Google Apps Script relay entries.
 
 ### Pending
 

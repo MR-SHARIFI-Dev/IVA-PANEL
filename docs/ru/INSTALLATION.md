@@ -60,6 +60,6 @@
 
 ## Решение проблем
 
-- Сначала прочитайте [FAQ](https://telegra.ph/IVA-Panel--FAQ--%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D9%85%D8%AA%D8%AF%D8%A7%D9%88%D9%84-08-08-2).
+- Сначала прочитайте [FAQ на русском](FAQ.md).
 - Проверьте сеть в [IVA Radar](https://net.ivaworks.site/).
 - Если проблема осталась, обратитесь к [@Ivaworkersup](https://t.me/Ivaworkersup); не отправляйте токен или пароль.

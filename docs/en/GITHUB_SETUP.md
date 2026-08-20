@@ -23,7 +23,7 @@
 ## Professional repository settings
 
 1. Edit the About box and add the description, `https://ivaworks.site/`, and the recommended topics.
-2. Open **Settings → General → Social preview** and upload `assets/posters/iva-panel-hero.png`.
+2. Open **Settings → General → Social preview** and upload `assets/posters/iva-panel-hero-v2.png`.
 3. Keep Issues enabled if you want structured bug reports.
 4. Add a branch protection rule for `main` under **Settings → Branches**.
 

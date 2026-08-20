@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/posters/iva-panel-hero.png" alt="IVA Panel" width="100%">
+  <img src="assets/posters/iva-panel-hero-v2.png" alt="IVA | آیوا" width="100%">
 </p>
 
 <p align="center">
@@ -8,20 +8,52 @@
   <a href="README.ru.md">Русский</a>
 </p>
 
+<p align="center">
+  <img alt="License" src="https://img.shields.io/badge/license-Proprietary-7c3aed">
+  <img alt="Cloudflare Workers" src="https://img.shields.io/badge/platform-Cloudflare%20Workers-f38020">
+  <img alt="Windows" src="https://img.shields.io/badge/Windows-x64-2563eb">
+  <img alt="Android" src="https://img.shields.io/badge/Android-10%2B-22c55e">
+  <img alt="Languages" src="https://img.shields.io/badge/docs-FA%20%7C%20EN%20%7C%20RU-06b6d4">
+  <img alt="IVA Worker" src="https://img.shields.io/badge/IVA%20Worker-4.4.73-8b5cf6">
+  <img alt="Panel" src="https://img.shields.io/badge/Panel-10.7.59-0ea5e9">
+  <img alt="Installer" src="https://img.shields.io/badge/Installer-1.4.9-14b8a6">
+</p>
+
+<p align="center">
+  <a href="https://install.ivaworks.site/"><strong>One-click install</strong></a> ·
+  <a href="../../releases"><strong>Download apps</strong></a> ·
+  <a href="docs/FEATURE_MATRIX.md"><strong>All features</strong></a> ·
+  <a href="docs/en/FAQ.md"><strong>FAQ</strong></a> ·
+  <a href="https://net.ivaworks.site/"><strong>Network radar</strong></a> ·
+  <a href="https://t.me/Ivaworkersup"><strong>Support</strong></a>
+</p>
+
 # IVA Panel
 
 The official documentation, downloads, and release hub for **IVA Panel** — a professional multi-location management panel powered by Cloudflare Workers.
 
 > This is the official distribution and documentation repository. IVA Panel's proprietary source code is not published here.
 
-## Highlights
+## Why IVA Panel?
 
-- Easy installation through the [official web installer](https://install.ivaworks.site/) or bot.
-- Powered by Cloudflare Workers.
-- Multi-location management with worldwide location support.
-- Dedicated Windows and Android applications.
-- Live network radar for service status, traffic, latency, outages, and disruption analysis.
-- Free use under the terms announced by IVA Works.
+| Capability | What it provides |
+|---|---|
+| ☁️ Cloudflare Workers architecture | The panel itself runs without a separate VPS |
+| 🌍 Multi-Location | Multiple locations and infrastructure endpoints in one dashboard |
+| ⚡ One-click installation | Official web and Telegram installation paths |
+| 💾 Backup & Restore | Full backup, recovery, and migration workflow |
+| 🤖 Telegram management | Official automation for installation and management operations |
+| 🖥 Dedicated applications | Android 10+ and Windows x64 |
+| 📡 Network Intelligence | Live status, latency, and disruption radar |
+| 🌐 Trilingual documentation | Persian, English, and Russian maintained in this repository |
+
+## Current stable versions
+
+| IVA Worker | Panel | Installer | Channel | Released UTC | Minimum version |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| `4.4.73` | `10.7.59` | `1.4.9` | `stable` | `2026-08-17 19:55` | `4.4.55` |
+
+This update is not mandatory. See the official **[Feature Matrix](docs/FEATURE_MATRIX.md)** for the complete v1/v2/v3 comparison of more than one hundred capabilities, including National Internet, Arvan CDN, and Google Apps Script Relay in v3.
 
 ## Quick installation
 
@@ -48,7 +80,7 @@ Official binaries are published on [GitHub Releases](../../releases), not commit
 [Android guide](apps/android/README.md) · [Windows guide](apps/windows/README.md)
 
 <p align="center">
-  <img src="assets/posters/iva-apps-poster.png" alt="IVA Panel apps for Windows and Android" width="100%">
+  <img src="assets/posters/iva-apps-showcase-v2.png" alt="IVA | آیوا apps for Windows and Android" width="100%">
 </p>
 
 ## Real application screenshots
@@ -73,7 +105,17 @@ The live IVA internet radar provides real-time service status, direct tests from
 **[Open the radar](https://net.ivaworks.site/)**
 
 <p align="center">
-  <img src="assets/posters/iva-network-radar.png" alt="IVA Network Intelligence" width="100%">
+  <img src="assets/posters/iva-network-radar-v2.png" alt="IVA | آیوا Network Intelligence" width="100%">
+</p>
+
+## Local trilingual FAQ
+
+The complete FAQ now lives in this repository and covers installation, security, Multi-Location, Backup/Restore, applications, Relays, Requests, limits, and support.
+
+**[Open the English FAQ](docs/en/FAQ.md)** · [فارسی](docs/fa/FAQ.md) · [Русский](docs/ru/FAQ.md)
+
+<p align="center">
+  <a href="docs/en/FAQ.md"><img src="assets/posters/iva-faq-v2.png" alt="IVA | آیوا FAQ" width="100%"></a>
 </p>
 
 ## Official links
@@ -88,12 +130,12 @@ The live IVA internet radar provides real-time service status, direct tests from
 | Support | [@Ivaworkersup](https://t.me/Ivaworkersup) |
 | User group | [@IVA_Panel_group](https://t.me/IVA_Panel_group) |
 | Q&A chat | [@IVAPANELCHAT](https://t.me/IVAPANELCHAT) |
-| FAQ | [IVA Panel FAQ](https://telegra.ph/IVA-Panel--FAQ--%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D9%85%D8%AA%D8%AF%D8%A7%D9%88%D9%84-08-08-2) |
+| FAQ | [English FAQ in this repository](docs/en/FAQ.md) |
 | Internet radar | [net.ivaworks.site](https://net.ivaworks.site/) |
 
 ## Support and issue reporting
 
-- Read the [FAQ](https://telegra.ph/IVA-Panel--FAQ--%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D9%85%D8%AA%D8%AF%D8%A7%D9%88%D9%84-08-08-2) first.
+- Read the [English FAQ](docs/en/FAQ.md) first.
 - Use the GitHub **Bug report** template for app defects; never attach secrets or account data.
 - Contact [@Ivaworkersup](https://t.me/Ivaworkersup) for installation or account help.
 - Do not disclose security vulnerabilities publicly; follow [SECURITY.md](SECURITY.md).

@@ -1,8 +1,10 @@
 # IVA Panel assets
 
 - `brand/iva-logo.png`: official supplied logo.
-- `posters/iva-panel-hero.png`: GitHub hero and social preview.
-- `posters/iva-apps-poster.png`: Windows and Android promotional visual. It intentionally contains no invented application UI.
+- `posters/iva-panel-hero-v2.png`: primary GitHub hero and social preview with the bilingual `IVA | آیوا` wordmark.
+- `posters/iva-apps-showcase-v2.png`: Windows and Android device showcase using the privacy-clean real app screens.
+- `posters/iva-faq-v2.png`: visual cover for the local trilingual FAQ.
+- `posters/iva-network-radar-v2.png`: Network Intelligence visual with the bilingual brand wordmark.
 - `posters/iva-network-radar.png`: IVA Network Intelligence promotional visual.
 - `screenshots/android/android-dark-redacted.png`: approved Android 10+ dark-theme screenshot with the public IP blurred.
 - `screenshots/android/android-light-redacted.png`: approved Android 10+ light-theme screenshot with the public IP blurred.

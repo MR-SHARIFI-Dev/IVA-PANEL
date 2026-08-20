@@ -62,7 +62,7 @@
 
 ## رفع مشکل
 
-- ابتدا [FAQ](https://telegra.ph/IVA-Panel--FAQ--%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D9%85%D8%AA%D8%AF%D8%A7%D9%88%D9%84-08-08-2) را بررسی کنید.
+- ابتدا [FAQ فارسی](FAQ.md) را بررسی کنید.
 - وضعیت شبکه را در [IVA Radar](https://net.ivaworks.site/) ببینید.
 - اگر مشکل باقی بود به [@Ivaworkersup](https://t.me/Ivaworkersup) پیام دهید؛ توکن یا رمز را ارسال نکنید.
 
