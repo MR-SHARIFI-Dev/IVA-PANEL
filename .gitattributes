@@ -1,0 +1,20 @@
+* text=auto eol=lf
+
+*.md text diff=markdown
+*.json text
+*.yml text
+*.yaml text
+*.sh text eol=lf
+*.ps1 text eol=crlf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.apk binary
+*.aab binary
+*.exe binary
+*.msi binary
+*.msix binary
+*.zip binary
