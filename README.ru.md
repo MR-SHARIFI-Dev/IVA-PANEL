@@ -24,6 +24,7 @@
   <a href="../../releases"><strong>Приложения</strong></a> ·
   <a href="docs/FEATURE_MATRIX.md"><strong>Все функции</strong></a> ·
   <a href="https://docs.ivaworks.site/"><strong>Сайт документации</strong></a> ·
+  <a href="https://github.com/MR-SHARIFI-Dev/IVA-PANEL/wiki"><strong>Wiki</strong></a> ·
   <a href="docs/ru/FAQ.md"><strong>FAQ</strong></a> ·
   <a href="https://net.ivaworks.site/"><strong>Сетевой радар</strong></a> ·
   <a href="https://t.me/Ivaworkersup"><strong>Поддержка</strong></a>
@@ -125,6 +126,7 @@
 |---|---|
 | Официальный сайт | [ivaworks.site](https://ivaworks.site/) |
 | Сайт документации | [docs.ivaworks.site](https://docs.ivaworks.site/) |
+| GitHub Wiki | [Полная Wiki IVA Panel](https://github.com/MR-SHARIFI-Dev/IVA-PANEL/wiki) |
 | Веб-установщик | [install.ivaworks.site](https://install.ivaworks.site/) |
 | Канал новостей | [@PANEL_ivaworks](https://t.me/PANEL_ivaworks) |
 | Бот установки панели | [@IVAPANELBOT](https://t.me/IVAPANELBOT) |

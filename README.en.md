@@ -24,6 +24,7 @@
   <a href="../../releases"><strong>Download apps</strong></a> ·
   <a href="docs/FEATURE_MATRIX.md"><strong>All features</strong></a> ·
   <a href="https://docs.ivaworks.site/"><strong>Documentation website</strong></a> ·
+  <a href="https://github.com/MR-SHARIFI-Dev/IVA-PANEL/wiki"><strong>Wiki</strong></a> ·
   <a href="docs/en/FAQ.md"><strong>FAQ</strong></a> ·
   <a href="https://net.ivaworks.site/"><strong>Network radar</strong></a> ·
   <a href="https://t.me/Ivaworkersup"><strong>Support</strong></a>
@@ -125,6 +126,7 @@ The complete FAQ now lives in this repository and covers installation, security,
 |---|---|
 | Official website | [ivaworks.site](https://ivaworks.site/) |
 | Documentation website | [docs.ivaworks.site](https://docs.ivaworks.site/) |
+| GitHub Wiki | [Complete IVA Panel Wiki](https://github.com/MR-SHARIFI-Dev/IVA-PANEL/wiki) |
 | Web installer | [install.ivaworks.site](https://install.ivaworks.site/) |
 | Announcement channel | [@PANEL_ivaworks](https://t.me/PANEL_ivaworks) |
 | Panel installation bot | [@IVAPANELBOT](https://t.me/IVAPANELBOT) |

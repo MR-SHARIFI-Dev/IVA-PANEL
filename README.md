@@ -24,6 +24,7 @@
   <a href="../../releases"><strong>دانلود اپ‌ها</strong></a> ·
   <a href="docs/FEATURE_MATRIX.md"><strong>همهٔ قابلیت‌ها</strong></a> ·
   <a href="https://docs.ivaworks.site/"><strong>وب‌سایت مستندات</strong></a> ·
+  <a href="https://github.com/MR-SHARIFI-Dev/IVA-PANEL/wiki"><strong>Wiki</strong></a> ·
   <a href="docs/fa/FAQ.md"><strong>FAQ فارسی</strong></a> ·
   <a href="https://net.ivaworks.site/"><strong>رادار شبکه</strong></a> ·
   <a href="https://t.me/Ivaworkersup"><strong>پشتیبانی</strong></a>
@@ -147,6 +148,7 @@
 |---|---|
 | وب‌سایت رسمی | [ivaworks.site](https://ivaworks.site/) |
 | وب‌سایت مستندات | [docs.ivaworks.site](https://docs.ivaworks.site/) |
+| GitHub Wiki | [راهنمای کامل IVA Panel](https://github.com/MR-SHARIFI-Dev/IVA-PANEL/wiki) |
 | نصب‌کنندهٔ وب | [install.ivaworks.site](https://install.ivaworks.site/) |
 | کانال اطلاع‌رسانی | [@PANEL_ivaworks](https://t.me/PANEL_ivaworks) |
 | ربات نصب پنل | [@IVAPANELBOT](https://t.me/IVAPANELBOT) |
