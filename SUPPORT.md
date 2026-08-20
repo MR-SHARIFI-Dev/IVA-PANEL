@@ -6,7 +6,7 @@
 2. وضعیت شبکه را در [IVA Radar](https://net.ivaworks.site/) بررسی کنید.
 3. برای خطای قابل بازتولید برنامه از Issue Template استفاده کنید.
 4. برای مشکل نصب یا حساب به [@Ivaworkersup](https://t.me/Ivaworkersup) پیام دهید.
-5. برای پرسش عمومی از [@IVAPANELCHAT](https://t.me/IVAPANELCHAT) یا [@IVA_Panel_group](https://t.me/IVA_Panel_group) استفاده کنید.
+5. برای پرسش عمومی فقط از گروه رسمی [@IVA_Panel_group](https://t.me/IVA_Panel_group) استفاده کنید.
 
 هنگام گزارش، نسخهٔ برنامه، Android/Windows، مدل دستگاه، متن دقیق خطا و مراحل بازتولید را بنویسید. توکن، رمز، ایمیل خصوصی یا اسکرین‌شات حاوی اطلاعات حساس نفرستید.
 

@@ -155,7 +155,7 @@ Cloudflare Token، Global API Key، رمز پنل، فایل Backup، کوکی،
 
 - مشکل قابل بازتولید برنامه: GitHub Issues با قالب Bug Report.
 - نصب یا دسترسی حساب: [@Ivaworkersup](https://t.me/Ivaworkersup).
-- پرسش عمومی: [@IVAPANELCHAT](https://t.me/IVAPANELCHAT) یا [@IVA_Panel_group](https://t.me/IVA_Panel_group).
+- پرسش عمومی: گروه رسمی [@IVA_Panel_group](https://t.me/IVA_Panel_group).
 - آسیب‌پذیری امنیتی: مطابق [SECURITY.md](../../SECURITY.md) و به‌صورت غیرعمومی گزارش شود.
 
 ---
@@ -163,4 +163,3 @@ Cloudflare Token، Global API Key، رمز پنل، فایل Backup، کوکی،
 [بازگشت به README فارسی](../../README.md) · [تمام مستندات](../README.md)
 
 </div>
-

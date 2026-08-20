@@ -153,10 +153,9 @@ Request — коммуникационный запрос между клиен�
 
 - Воспроизводимая ошибка приложения: шаблон GitHub Bug Report.
 - Установка или доступ к аккаунту: [@Ivaworkersup](https://t.me/Ivaworkersup).
-- Общий вопрос: [@IVAPANELCHAT](https://t.me/IVAPANELCHAT) или [@IVA_Panel_group](https://t.me/IVA_Panel_group).
+- Общий вопрос: официальная группа [@IVA_Panel_group](https://t.me/IVA_Panel_group).
 - Уязвимость безопасности: приватно по правилам [SECURITY.md](../../SECURITY.md).
 
 ---
 
 [К README на русском](../../README.ru.md) · [Вся документация](../README.md)
-

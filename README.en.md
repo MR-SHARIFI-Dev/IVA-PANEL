@@ -129,7 +129,6 @@ The complete FAQ now lives in this repository and covers installation, security,
 | IVA Mailer bot | [@IVAmailbot](https://t.me/IVAmailbot) |
 | Support | [@Ivaworkersup](https://t.me/Ivaworkersup) |
 | User group | [@IVA_Panel_group](https://t.me/IVA_Panel_group) |
-| Q&A chat | [@IVAPANELCHAT](https://t.me/IVAPANELCHAT) |
 | FAQ | [English FAQ in this repository](docs/en/FAQ.md) |
 | Internet radar | [net.ivaworks.site](https://net.ivaworks.site/) |
 

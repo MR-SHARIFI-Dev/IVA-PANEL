@@ -153,10 +153,9 @@ Never post a Cloudflare Token, Global API Key, panel password, backup file, cook
 
 - Reproducible application bug: use the GitHub Bug Report template.
 - Installation or account access: contact [@Ivaworkersup](https://t.me/Ivaworkersup).
-- General question: use [@IVAPANELCHAT](https://t.me/IVAPANELCHAT) or [@IVA_Panel_group](https://t.me/IVA_Panel_group).
+- General question: use the official [@IVA_Panel_group](https://t.me/IVA_Panel_group).
 - Security vulnerability: report privately according to [SECURITY.md](../../SECURITY.md).
 
 ---
 
 [Back to the English README](../../README.en.md) · [All documentation](../README.md)
-

@@ -151,7 +151,6 @@
 | ربات IVA Mailer | [@IVAmailbot](https://t.me/IVAmailbot) |
 | پشتیبانی | [@Ivaworkersup](https://t.me/Ivaworkersup) |
 | گروه کاربران | [@IVA_Panel_group](https://t.me/IVA_Panel_group) |
-| گفت‌وگوی Q&A | [@IVAPANELCHAT](https://t.me/IVAPANELCHAT) |
 | سؤالات متداول | [FAQ فارسی داخل ریپو](docs/fa/FAQ.md) |
 | رادار اینترنت | [net.ivaworks.site](https://net.ivaworks.site/) |
 

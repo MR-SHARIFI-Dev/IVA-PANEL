@@ -129,7 +129,6 @@
 | Бот IVA Mailer | [@IVAmailbot](https://t.me/IVAmailbot) |
 | Поддержка | [@Ivaworkersup](https://t.me/Ivaworkersup) |
 | Группа пользователей | [@IVA_Panel_group](https://t.me/IVA_Panel_group) |
-| Чат вопросов и ответов | [@IVAPANELCHAT](https://t.me/IVAPANELCHAT) |
 | FAQ | [FAQ на русском в этом репозитории](docs/ru/FAQ.md) |
 | Интернет-радар | [net.ivaworks.site](https://net.ivaworks.site/) |
 
