@@ -25,7 +25,7 @@
   <a href="docs/FEATURE_MATRIX.md"><strong>همهٔ قابلیت‌ها</strong></a> ·
   <a href="docs/fa/FAQ.md"><strong>FAQ فارسی</strong></a> ·
   <a href="https://net.ivaworks.site/"><strong>رادار شبکه</strong></a> ·
-  <a href="https://t.me/Ivaworkersup"><strong>پشتیبانی</strong></a> 
+  <a href="https://t.me/Ivaworkersup"><strong>پشتیبانی</strong></a>
 </p>
 
 <div dir="rtl" align="right">
