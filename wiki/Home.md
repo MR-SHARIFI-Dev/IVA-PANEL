@@ -20,38 +20,43 @@
 
 | فارسی | English | Русский |
 |---|---|---|
-| [[شروع از اینجا|FA-Overview]] | [[Start here|EN-Overview]] | [[Начать здесь|RU-Overview]] |
-| [[نصب کامل|FA-Installation]] | [[Installation|EN-Installation]] | [[Установка|RU-Installation]] |
-| [[سؤالات متداول|FA-FAQ]] | [[FAQ|EN-FAQ]] | [[FAQ|RU-FAQ]] |
-| [[امنیت و پشتیبانی|FA-Security-and-Support]] | [[Security and support|EN-Security-and-Support]] | [[Безопасность и поддержка|RU-Security-and-Support]] |
+| [شروع از اینجا](FA-Overview) | [Start here](EN-Overview) | [Начать здесь](RU-Overview) |
+| [نصب کامل](FA-Installation) | [Installation](EN-Installation) | [Установка](RU-Installation) |
+| [سؤالات متداول](FA-FAQ) | [FAQ](EN-FAQ) | [FAQ](RU-FAQ) |
+| [امنیت و پشتیبانی](FA-Security-and-Support) | [Security and support](EN-Security-and-Support) | [Безопасность и поддержка](RU-Security-and-Support) |
 
 ## Official resources
 
 | Resource | Official address |
 |---|---|
-| Documentation | https://docs.ivaworks.site/ |
-| Web installer | https://install.ivaworks.site/ |
-| GitHub repository | https://github.com/MR-SHARIFI-Dev/IVA-PANEL |
-| Network Intelligence | https://net.ivaworks.site/ |
-| Telegram channel | https://t.me/PANEL_ivaworks |
-| Installation bot | https://t.me/IVAPANELBOT |
-| Support | https://t.me/Ivaworkersup |
-| Community group | https://t.me/IVA_Panel_group |
-| Official email | info@ivaworks.site |
+| Documentation | [docs.ivaworks.site](https://docs.ivaworks.site/) |
+| Web installer | [install.ivaworks.site](https://install.ivaworks.site/) |
+| GitHub repository | [IVA-PANEL](https://github.com/MR-SHARIFI-Dev/IVA-PANEL) |
+| Network Intelligence | [net.ivaworks.site](https://net.ivaworks.site/) |
+| Telegram channel | [@PANEL_ivaworks](https://t.me/PANEL_ivaworks) |
+| Installation bot | [@IVAPANELBOT](https://t.me/IVAPANELBOT) |
+| Support | [@Ivaworkersup](https://t.me/Ivaworkersup) |
+| Community group | [@IVA_Panel_group](https://t.me/IVA_Panel_group) |
+| Official email | [info@ivaworks.site](mailto:info@ivaworks.site) |
 
 ## Architecture at a glance
 
-Installation and Cloudflare API requests are sent directly from the user's device to Cloudflare. IVA does not store the Cloudflare token, account data, user IP address, or activity logs. The documentation website is static and has no application backend.
+The normal route connects a user on restricted or filtered internet through **IVA | آیوا** and Cloudflare to the global internet. When national-intranet mode is required, an additional relay route can be selected after Cloudflare: National Relay, Google Relay, or Arvan CDN Relay.
 
 ```mermaid
 flowchart TD
-    U["User device"] --> I["Official installer interface"]
-    I --> C["Cloudflare API"]
-    C --> P["User's IVA Panel"]
-    D["Static documentation site"] -. "No backend or tracking" .-> U
+    U["User • کاربر — Restricted / filtered internet"] --> I["IVA • آیوا"]
+    I --> C["Cloudflare"]
+    C -->|"Normal route"| G["Global Internet • اینترنت جهانی"]
+    C -->|"National-intranet mode"| M{"Select relay route"}
+    M --> N["National Relay • رله ملی"]
+    M --> R["Google Relay • رله گوگل"]
+    M --> A["Arvan CDN Relay • رله آروان"]
+    N --> G
+    R --> G
+    A --> G
 ```
 
-Read the full explanation in [[Architecture and data flow]].
+Read the full explanation in [Architecture and data flow](Architecture-and-data-flow).
 
 > IVA Panel is proprietary software owned by **IVA Team**. This public repository and Wiki provide official documentation and release information; they do not publish the proprietary source code.
-

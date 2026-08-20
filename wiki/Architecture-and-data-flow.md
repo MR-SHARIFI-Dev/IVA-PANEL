@@ -35,6 +35,28 @@ The official installer sends Cloudflare requests directly from the user's device
 
 Cloudflare independently processes requests under its own terms and privacy policy. Users should create a restricted, short-lived token, never publish it, and revoke or rotate it after installation.
 
+## Connection routing
+
+The normal connection path is **User → IVA → Cloudflare → Global Internet**. If national-intranet mode is active, IVA can use an additional route after Cloudflare through a National Relay, Google Relay, or Arvan CDN Relay. The available route depends on the active panel configuration and current network availability.
+
+```mermaid
+flowchart TD
+    U["User • کاربر — Restricted / filtered internet"] --> I["IVA • آیوا"]
+    I --> C["Cloudflare"]
+    C -->|"Normal route"| G["Global Internet • اینترنت جهانی"]
+    C -->|"National-intranet mode"| M{"Select relay route"}
+    M --> N["National Relay • رله ملی"]
+    M --> R["Google Relay • رله گوگل"]
+    M --> A["Arvan CDN Relay • رله آروان"]
+    N --> G
+    R --> G
+    A --> G
+```
+
+The relay nodes above are alternative routes; normal traffic does not pass through all three relays in sequence.
+
+## Installation data flow
+
 ```mermaid
 flowchart LR
     U["User device"] -->|"Direct HTTPS request"| C["Cloudflare API"]
@@ -43,4 +65,3 @@ flowchart LR
 ```
 
 See also: [[Release Information]] · [[FA-Privacy-and-Terms]] · [[EN-Privacy-and-Terms]] · [[RU-Privacy-and-Terms]].
-
