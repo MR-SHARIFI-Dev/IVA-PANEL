@@ -25,7 +25,8 @@
   <a href="docs/FEATURE_MATRIX.md"><strong>All features</strong></a> ·
   <a href="docs/en/FAQ.md"><strong>FAQ</strong></a> ·
   <a href="https://net.ivaworks.site/"><strong>Network radar</strong></a> ·
-  <a href="https://t.me/Ivaworkersup"><strong>Support</strong></a>
+  <a href="https://t.me/Ivaworkersup"><strong>Support</strong></a> ·
+  <a href="docs/en/GITHUB_PAGES.md"><strong>Publish website</strong></a>
 </p>
 
 # IVA Panel
@@ -141,7 +142,7 @@ The complete FAQ now lives in this repository and covers installation, security,
 
 ## Repository maintainer guide
 
-If you publish the project, follow the [beginner GitHub setup and release guide](docs/en/GITHUB_SETUP.md). The folder inventory is in [docs/README.md](docs/README.md). Complete and review [the privacy policy template](docs/PRIVACY_POLICY_TEMPLATE.md) using verified data practices before any public launch.
+If you publish the project, follow the [beginner GitHub setup and release guide](docs/en/GITHUB_SETUP.md) and the [GitHub Pages publishing guide](docs/en/GITHUB_PAGES.md). The trilingual project website is stored at `docs/index.html` and is published by selecting `main /docs` in Pages settings. The folder inventory is in [docs/README.md](docs/README.md). Complete and review [the privacy policy template](docs/PRIVACY_POLICY_TEMPLATE.md) using verified data practices before any public launch.
 
 ## License and ownership
 

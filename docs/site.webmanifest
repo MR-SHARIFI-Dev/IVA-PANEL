@@ -1,0 +1,17 @@
+{
+  "name": "IVA Panel | آیوا پنل",
+  "short_name": "IVA Panel",
+  "description": "Official IVA Panel documentation and release website.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#050814",
+  "theme_color": "#070b1a",
+  "icons": [
+    {
+      "src": "assets/images/iva-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+

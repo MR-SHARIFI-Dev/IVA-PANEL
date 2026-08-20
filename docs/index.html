@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#070b1a">
+    <meta name="description" content="IVA Panel — professional multi-location management powered by Cloudflare Workers, with Android and Windows applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="IVA Panel | آیوا پنل">
+    <meta property="og:description" content="Professional multi-location management powered by Cloudflare Workers.">
+    <meta property="og:image" content="assets/images/iva-hero.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>IVA Panel | آیوا پنل</title>
+    <link rel="icon" type="image/png" href="assets/images/iva-logo.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">رفتن به محتوای اصلی</a>
+
+    <header class="site-header" id="top">
+      <div class="shell nav-wrap">
+        <a class="brand" href="index.html" aria-label="IVA Panel home">
+          <img src="assets/images/iva-logo.png" alt="IVA logo" width="44" height="44">
+          <span><b>IVA</b><small>آیوا پنل</small></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n-aria="menuAria">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="#overview" data-i18n="navOverview">معرفی</a>
+          <a href="#features" data-i18n="navFeatures">قابلیت‌ها</a>
+          <a href="#apps" data-i18n="navApps">اپلیکیشن‌ها</a>
+          <a href="#install" data-i18n="navInstall">نصب</a>
+          <a href="#radar" data-i18n="navRadar">رادار</a>
+          <a href="faq.html" data-i18n="navFaq">سؤالات متداول</a>
+        </nav>
+
+        <div class="nav-tools">
+          <div class="language-switcher" role="group" aria-label="Language">
+            <button type="button" data-lang="fa" aria-pressed="true">FA</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+            <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+          </div>
+          <button class="theme-toggle" type="button" data-i18n-aria="themeAria" aria-label="تغییر پوسته"><span aria-hidden="true">◐</span></button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/images/iva-hero.png" alt="">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="shell hero-content">
+          <div class="eyebrow"><span class="pulse"></span><span data-i18n="heroEyebrow">نسخهٔ پایدار در دسترس است</span></div>
+          <h1 id="hero-title"><span>IVA Panel</span><em data-i18n="heroName">آیوا پنل</em></h1>
+          <p data-i18n="heroLead">پنل حرفه‌ای مولتی‌لوکیشن بر بستر Cloudflare Workers؛ مدیریت سریع، یکپارچه و هوشمند با اپلیکیشن‌های اختصاصی Windows و Android.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://install.ivaworks.site/" target="_blank" rel="noopener" data-i18n="installNow">نصب یک‌کلیکی</a>
+            <a class="button secondary" href="features.html" data-i18n="allFeatures">مشاهدهٔ همه قابلیت‌ها</a>
+            <a class="button ghost repo-link" href="#" data-repo-path="" data-i18n="githubRepo">مخزن GitHub</a>
+          </div>
+          <div class="hero-trust">
+            <span><b>4.4.73</b><small>IVA Worker</small></span>
+            <span><b>10.7.59</b><small>Panel</small></span>
+            <span><b>1.4.9</b><small>Installer</small></span>
+            <span><b>FA · EN · RU</b><small data-i18n="docsLabel">مستندات</small></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" id="overview">
+        <div class="shell split">
+          <div>
+            <div class="section-kicker" data-i18n="overviewKicker">یک کنترل‌سنتر یکپارچه</div>
+            <h2 data-i18n="overviewTitle">زیرساخت چند لوکیشن، بدون پیچیدگی اضافه</h2>
+            <p class="section-lead" data-i18n="overviewLead">IVA Panel برای مدیریت کاربران، مسیرها، تنظیمات و لوکیشن‌های مختلف در یک داشبورد واکنش‌گرا طراحی شده است. خود پنل روی Cloudflare Workers اجرا می‌شود و برای اجرای پنل به VPS جداگانه نیاز ندارد.</p>
+            <div class="inline-notice"><span aria-hidden="true">◆</span><p data-i18n="proprietaryNote">این پروژه متن‌باز نیست؛ این ریپو مرکز رسمی مستندات، دانلود و انتشار نسخه‌هاست.</p></div>
+          </div>
+          <div class="stat-grid" aria-label="Product highlights">
+            <article><strong>100+</strong><span data-i18n="statFeatures">قابلیت مستندشده</span></article>
+            <article><strong>3</strong><span data-i18n="statLanguages">زبان مستندات</span></article>
+            <article><strong>2</strong><span data-i18n="statApps">اپلیکیشن اختصاصی</span></article>
+            <article><strong>24/7</strong><span data-i18n="statRadar">رادار وضعیت شبکه</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section features-section" id="features">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <div class="section-kicker" data-i18n="featuresKicker">قابلیت‌های کلیدی v3</div>
+              <h2 data-i18n="featuresTitle">ابزارهای حرفه‌ای برای مدیریت، پایداری و امنیت</h2>
+            </div>
+            <a class="text-link" href="features.html"><span data-i18n="matrixLink">ماتریس کامل v1 / v2 / v3</span><b aria-hidden="true">↗</b></a>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card featured">
+              <span class="feature-icon">◎</span>
+              <h3 data-i18n="fMultiTitle">Multi-Location</h3>
+              <p data-i18n="fMultiText">مدیریت چند لوکیشن، مسیر و زیرساخت از یک پنل واحد.</p>
+              <span class="tag">v1 · v2 · v3</span>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">↯</span>
+              <h3 data-i18n="fNationalTitle">اتصال در اینترنت ملی</h3>
+              <p data-i18n="fNationalText">مسیر Relay جایگزین برای شرایط اینترانت و اختلال اینترنت بین‌الملل.</p>
+              <span class="tag new">v3</span>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">△</span>
+              <h3 data-i18n="fArvanTitle">Arvan CDN Relay</h3>
+              <p data-i18n="fArvanText">بهینه‌سازی مسیر و تأخیر در شرایط شبکه و تنظیمات مناسب.</p>
+              <span class="tag new">v3</span>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">G</span>
+              <h3 data-i18n="fGoogleTitle">Google Apps Script</h3>
+              <p data-i18n="fGoogleText">مسیر Relay مبتنی بر Google Apps Script در نسخهٔ سوم.</p>
+              <span class="tag new">v3</span>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">▣</span>
+              <h3 data-i18n="fBackupTitle">Full Backup & Restore</h3>
+              <p data-i18n="fBackupText">پشتیبان‌گیری کامل، بازیابی تنظیمات و مهاجرت کنترل‌شده.</p>
+              <span class="tag new">v3</span>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">◇</span>
+              <h3 data-i18n="fSecurityTitle">امنیت حساب</h3>
+              <p data-i18n="fSecurityText">TOTP، کد بازیابی، محدودیت ورود و مدیریت نشست‌ها.</p>
+              <span class="tag new">v3</span>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">⇄</span>
+              <h3 data-i18n="fRoutingTitle">Routing & DNS</h3>
+              <p data-i18n="fRoutingText">GeoIP، GeoSite، DoH، DNS محلی و قوانین مسیریابی سفارشی.</p>
+              <span class="tag">v1 · v2 · v3</span>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">⌁</span>
+              <h3 data-i18n="fClientsTitle">کلاینت‌های گسترده</h3>
+              <p data-i18n="fClientsText">Mihomo، sing-box، Loon، Surge، Quantumult X و Base64.</p>
+              <span class="tag">v1 · v2 · v3</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section versions-section">
+        <div class="shell">
+          <div class="section-kicker" data-i18n="versionsKicker">تکامل محصول</div>
+          <h2 data-i18n="versionsTitle">سه نسل، یک مسیر رو به جلو</h2>
+          <div class="timeline">
+            <article><span>01</span><h3>v1</h3><p data-i18n="v1Text">اشتراک خودکار، کلاینت‌های اصلی، Load Balancing، Health Check، DNS و ابزارهای پایه.</p></article>
+            <article><span>02</span><h3>v2</h3><p data-i18n="v2Text">داشبورد RTL، حالت پیشرفته، زنجیره‌های پروکسی، امنیت TLS، مدیریت Telegram و ویرایشگر JSON.</p></article>
+            <article class="active"><span>03</span><h3>v3</h3><p data-i18n="v3Text">کاربران و سهمیه‌ها، TOTP، D1، API مدیریت متمرکز، Relayها، Backup/Restore و نصب یک‌کلیکی.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section apps-section" id="apps">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <div class="section-kicker" data-i18n="appsKicker">اپلیکیشن‌های رسمی</div>
+              <h2 data-i18n="appsTitle">یک تجربهٔ یکپارچه روی Windows و Android</h2>
+            </div>
+            <a class="text-link repo-link" href="#" data-repo-path="/releases/latest"><span data-i18n="downloadRelease">دانلود آخرین نسخه</span><b aria-hidden="true">↗</b></a>
+          </div>
+          <figure class="poster-frame"><img src="assets/images/iva-apps.png" alt="IVA applications for Windows and Android" loading="lazy"></figure>
+          <div class="platform-grid">
+            <article><div class="platform-mark windows">▦</div><div><h3>Windows x64</h3><p data-i18n="windowsText">نسخهٔ اختصاصی برای Windows 64-bit؛ نسخهٔ ۳۲ بیتی ارائه نمی‌شود.</p><code>IVA-VPN-1.0.1-Setup.exe</code></div></article>
+            <article><div class="platform-mark android">A</div><div><h3>Android 10+</h3><p data-i18n="androidText">نسخهٔ Universal برای معماری‌های رایج و دستگاه‌های Android 10 به بالا.</p><code>app-universal-release.apk</code></div></article>
+          </div>
+          <div class="screenshots">
+            <figure class="shot desktop-shot"><img src="assets/images/windows-app.png" alt="IVA Windows application screenshot with redacted IP" loading="lazy"><figcaption data-i18n="windowsCaption">نمای واقعی Windows — اطلاعات IP بلور شده است</figcaption></figure>
+            <figure class="shot phone-shot"><img src="assets/images/android-dark.png" alt="IVA Android dark theme screenshot with redacted IP" loading="lazy"><figcaption data-i18n="darkCaption">Android — حالت تاریک</figcaption></figure>
+            <figure class="shot phone-shot"><img src="assets/images/android-light.png" alt="IVA Android light theme screenshot with redacted IP" loading="lazy"><figcaption data-i18n="lightCaption">Android — حالت روشن</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section install-section" id="install">
+        <div class="shell install-layout">
+          <div>
+            <div class="section-kicker" data-i18n="installKicker">راه‌اندازی ساده و امن</div>
+            <h2 data-i18n="installTitle">از حساب Cloudflare تا پنل فعال در چند مرحله</h2>
+            <p class="section-lead" data-i18n="installLead">نصب از وب‌سایت یا ربات رسمی انجام می‌شود. از API Token محدود استفاده کنید و هرگز Global API Key، رمز یا فایل Backup را در فضای عمومی نفرستید.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="https://install.ivaworks.site/" target="_blank" rel="noopener" data-i18n="openInstaller">باز کردن نصب‌کننده</a>
+              <a class="button secondary" href="https://t.me/IVAPANELBOT" target="_blank" rel="noopener" data-i18n="openBot">ربات نصب پنل</a>
+            </div>
+          </div>
+          <ol class="install-steps">
+            <li><span>1</span><div><h3 data-i18n="step1Title">حساب را تأیید کنید</h3><p data-i18n="step1Text">یک حساب Cloudflare با ایمیلی که به آن دسترسی دارید بسازید.</p></div></li>
+            <li><span>2</span><div><h3 data-i18n="step2Title">توکن محدود بسازید</h3><p data-i18n="step2Text">فقط حداقل دسترسی لازم را به API Token بدهید.</p></div></li>
+            <li><span>3</span><div><h3 data-i18n="step3Title">پنل را ایجاد کنید</h3><p data-i18n="step3Text">توکن را فقط در وب‌سایت یا ربات رسمی وارد کنید.</p></div></li>
+            <li><span>4</span><div><h3 data-i18n="step4Title">دسترسی را امن کنید</h3><p data-i18n="step4Text">آدرس و رمز را ذخیره و توکن نصب را لغو یا تعویض کنید.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section radar-section" id="radar">
+        <div class="shell radar-grid">
+          <figure class="poster-frame"><img src="assets/images/iva-radar.png" alt="IVA Network Intelligence radar" loading="lazy"></figure>
+          <div>
+            <div class="section-kicker" data-i18n="radarKicker">IVA Network Intelligence</div>
+            <h2 data-i18n="radarTitle">دید زنده از وضعیت شبکه و سرویس‌ها</h2>
+            <p class="section-lead" data-i18n="radarLead">رادار IVA تست‌های قابل مشاهده، تأخیر، ترافیک و اختلال سرویس‌ها را نمایش می‌دهد تا قبل از عیب‌یابی، تصویر روشن‌تری از وضعیت شبکه داشته باشید.</p>
+            <ul class="check-list">
+              <li data-i18n="radarPoint1">وضعیت لحظه‌ای سرویس‌ها</li>
+              <li data-i18n="radarPoint2">تست مستقیم از ایران و جهان</li>
+              <li data-i18n="radarPoint3">بررسی تأخیر و اختلال شبکه</li>
+            </ul>
+            <a class="button primary" href="https://net.ivaworks.site/" target="_blank" rel="noopener" data-i18n="openRadar">باز کردن رادار</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section">
+        <div class="shell faq-callout">
+          <img src="assets/images/iva-faq.png" alt="IVA FAQ" loading="lazy">
+          <div>
+            <div class="section-kicker" data-i18n="faqKicker">راهنمای داخلی و سه‌زبانه</div>
+            <h2 data-i18n="faqTitle">قبل از پشتیبانی، پاسخ را در FAQ پیدا کنید</h2>
+            <p data-i18n="faqLead">پرسش‌های نصب، امنیت، Multi-Location، Backup، اپلیکیشن‌ها، Relay، Requestها و محدودیت‌ها داخل همین پروژه مستند شده‌اند.</p>
+            <a class="button secondary" href="faq.html" data-i18n="readFaq">مطالعهٔ FAQ کامل</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section links-section" id="links">
+        <div class="shell">
+          <div class="section-kicker" data-i18n="linksKicker">مسیرهای رسمی IVA Works</div>
+          <h2 data-i18n="linksTitle">فقط از لینک‌های رسمی استفاده کنید</h2>
+          <div class="official-links">
+            <a href="https://ivaworks.site/" target="_blank" rel="noopener"><span>01</span><div><b data-i18n="officialSite">وب‌سایت رسمی</b><small>ivaworks.site</small></div><i>↗</i></a>
+            <a href="https://t.me/PANEL_ivaworks" target="_blank" rel="noopener"><span>02</span><div><b data-i18n="channel">کانال اطلاع‌رسانی</b><small>@PANEL_ivaworks</small></div><i>↗</i></a>
+            <a href="https://t.me/IVA_Panel_group" target="_blank" rel="noopener"><span>03</span><div><b data-i18n="group">گروه رسمی کاربران</b><small>@IVA_Panel_group</small></div><i>↗</i></a>
+            <a href="https://t.me/Ivaworkersup" target="_blank" rel="noopener"><span>04</span><div><b data-i18n="support">پشتیبانی</b><small>@Ivaworkersup</small></div><i>↗</i></a>
+            <a href="https://t.me/IVAmailbot" target="_blank" rel="noopener"><span>05</span><div><b data-i18n="mailer">ربات IVA Mailer</b><small>@IVAmailbot</small></div><i>↗</i></a>
+            <a href="https://t.me/IVAPANELBOT" target="_blank" rel="noopener"><span>06</span><div><b data-i18n="panelBot">ربات IVA Panel</b><small>@IVAPANELBOT</small></div><i>↗</i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-brand"><img src="assets/images/iva-logo.png" alt="IVA" width="52" height="52"><div><b>IVA | آیوا</b><p data-i18n="footerTagline">در مسیر توسعه و نوآوری</p></div></div>
+        <nav aria-label="Footer navigation">
+          <a href="features.html" data-i18n="navFeatures">قابلیت‌ها</a>
+          <a href="faq.html" data-i18n="navFaq">سؤالات متداول</a>
+          <a class="repo-link" href="#" data-repo-path="/releases" data-i18n="releases">نسخه‌ها</a>
+          <a href="https://t.me/Ivaworkersup" target="_blank" rel="noopener" data-i18n="support">پشتیبانی</a>
+        </nav>
+      </div>
+      <div class="shell footer-bottom">
+        <p>© 2026 IVA Team — All Rights Reserved.</p>
+        <p data-i18n="footerLegal">پروژه اختصاصی است و تحت مجوز Proprietary منتشر می‌شود.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+

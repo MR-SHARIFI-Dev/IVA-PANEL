@@ -18,6 +18,8 @@ All notable IVA Panel releases should be documented here. Use [Semantic Versioni
 - Stable release metadata for IVA Worker `4.4.73`, Panel `10.7.59`, and Installer `1.4.9`.
 - v3 National Internet relay, Arvan CDN route optimization, and Google Apps Script relay entries.
 - Removed the retired secondary chat reference; `@IVA_Panel_group` is the only official community group.
+- Added a responsive trilingual GitHub Pages website with feature, FAQ, application, installation, radar, and official-link sections.
+- Added localized GitHub Pages activation guides for Persian, English, and Russian.
 
 ### Pending
 

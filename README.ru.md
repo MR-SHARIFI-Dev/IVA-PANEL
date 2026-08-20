@@ -25,7 +25,8 @@
   <a href="docs/FEATURE_MATRIX.md"><strong>Все функции</strong></a> ·
   <a href="docs/ru/FAQ.md"><strong>FAQ</strong></a> ·
   <a href="https://net.ivaworks.site/"><strong>Сетевой радар</strong></a> ·
-  <a href="https://t.me/Ivaworkersup"><strong>Поддержка</strong></a>
+  <a href="https://t.me/Ivaworkersup"><strong>Поддержка</strong></a> ·
+  <a href="docs/ru/GITHUB_PAGES.md"><strong>Опубликовать сайт</strong></a>
 </p>
 
 # IVA Panel
@@ -141,7 +142,7 @@
 
 ## Инструкция для владельца репозитория
 
-Для публикации проекта используйте [пошаговую инструкцию GitHub](docs/ru/GITHUB_SETUP.md). Структура папок описана в [docs/README.md](docs/README.md). Перед публичным запуском заполните и проверьте [шаблон политики конфиденциальности](docs/PRIVACY_POLICY_TEMPLATE.md) на основе реальной обработки данных.
+Для публикации проекта используйте [пошаговую инструкцию GitHub](docs/ru/GITHUB_SETUP.md) и [инструкцию GitHub Pages](docs/ru/GITHUB_PAGES.md). Трёхъязычный сайт находится в `docs/index.html` и публикуется выбором `main /docs` в настройках Pages. Структура папок описана в [docs/README.md](docs/README.md). Перед публичным запуском заполните и проверьте [шаблон политики конфиденциальности](docs/PRIVACY_POLICY_TEMPLATE.md).
 
 ## Лицензия и права
 

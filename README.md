@@ -25,7 +25,8 @@
   <a href="docs/FEATURE_MATRIX.md"><strong>همهٔ قابلیت‌ها</strong></a> ·
   <a href="docs/fa/FAQ.md"><strong>FAQ فارسی</strong></a> ·
   <a href="https://net.ivaworks.site/"><strong>رادار شبکه</strong></a> ·
-  <a href="https://t.me/Ivaworkersup"><strong>پشتیبانی</strong></a>
+  <a href="https://t.me/Ivaworkersup"><strong>پشتیبانی</strong></a> ·
+  <a href="docs/fa/GITHUB_PAGES.md"><strong>فعال‌سازی سایت پروژه</strong></a>
 </p>
 
 <div dir="rtl" align="right">
@@ -163,7 +164,7 @@
 
 ## راهنمای مدیر ریپو
 
-اگر مسئول انتشار پروژه هستید، [راهنمای قدم‌به‌قدم ساخت ریپو و انتشار نسخه](docs/fa/GITHUB_SETUP.md) را بخوانید. فهرست ساختار پوشه‌ها در [docs/README.md](docs/README.md) و قالب سیاست حریم خصوصی در [docs/PRIVACY_POLICY_TEMPLATE.md](docs/PRIVACY_POLICY_TEMPLATE.md) قرار دارد؛ قالب حریم خصوصی باید پیش از انتشار عمومی با اطلاعات واقعی تکمیل و بررسی شود.
+اگر مسئول انتشار پروژه هستید، [راهنمای قدم‌به‌قدم ساخت ریپو و انتشار نسخه](docs/fa/GITHUB_SETUP.md) و [راهنمای فعال‌سازی سایت GitHub Pages](docs/fa/GITHUB_PAGES.md) را بخوانید. سایت حرفه‌ای سه‌زبانه در `docs/index.html` قرار دارد و با انتخاب `main /docs` در تنظیمات Pages منتشر می‌شود. فهرست ساختار پوشه‌ها در [docs/README.md](docs/README.md) و قالب سیاست حریم خصوصی در [docs/PRIVACY_POLICY_TEMPLATE.md](docs/PRIVACY_POLICY_TEMPLATE.md) قرار دارد.
 
 ## مجوز و مالکیت
 
