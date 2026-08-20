@@ -1,0 +1,61 @@
+name: Publish IVA Wiki
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: iva-wiki-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish trilingual Wiki
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Read Wiki source
+        uses: actions/checkout@v4
+
+      - name: Validate Wiki package
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f wiki/Home.md
+          test -f wiki/_Sidebar.md
+          test -f wiki/_Footer.md
+          test -f wiki/FA-Overview.md
+          test -f wiki/EN-Overview.md
+          test -f wiki/RU-Overview.md
+          test -f wiki/Feature-Matrix.md
+
+      - name: Publish Wiki pages
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.WIKI_TOKEN || github.token }}
+        run: |
+          set -euo pipefail
+
+          askpass="$(mktemp)"
+          printf '%s\n' '#!/bin/sh' 'case "$1" in' '*Username*) echo "x-access-token" ;;' '*Password*) echo "$GH_TOKEN" ;;' 'esac' > "$askpass"
+          chmod 700 "$askpass"
+          export GIT_ASKPASS="$askpass"
+          export GIT_TERMINAL_PROMPT=0
+
+          git clone --depth 1 "https://github.com/${GITHUB_REPOSITORY}.wiki.git" wiki-target
+          rsync -a --delete --exclude='.git/' wiki/ wiki-target/
+
+          cd wiki-target
+          git config user.name "IVA Wiki Publisher"
+          git config user.email "info@ivaworks.site"
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "Wiki is already up to date."
+            exit 0
+          fi
+
+          git commit -m "Publish complete trilingual IVA Panel Wiki"
+          git push origin HEAD
