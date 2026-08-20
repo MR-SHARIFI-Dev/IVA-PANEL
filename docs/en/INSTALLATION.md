@@ -2,7 +2,7 @@
 
 [فارسی](../fa/INSTALLATION.md) · [English](INSTALLATION.md) · [Русский](../ru/INSTALLATION.md)
 
-This guide is written for beginners. Use only the official links listed in the repository [README](../../README.en.md).
+This document describes the official IVA Panel installation process. Use only the official links listed in the repository [README](../../README.en.md).
 
 ## What you need
 
@@ -36,14 +36,16 @@ Official references: [Create API token](https://developers.cloudflare.com/fundam
 
 1. Verify the exact username: **@IVAPANELBOT**.
 2. Start the bot and choose the panel creation option.
-3. Submit the restricted token only to this official bot.
+3. Enter the token only in the official interface opened by the bot; never send it as a Telegram message.
 4. Wait for deployment to finish.
 5. Store the returned panel URL and password in a password manager or another secure location.
 6. Open the panel and test the sign-in.
 
 ### Web installation
 
-Open [install.ivaworks.site](https://install.ivaworks.site/), verify the exact address, and follow the on-screen flow. Submit the token only on this official domain or through the official bot. Use [@IVAPANELBOT](https://t.me/IVAPANELBOT) if the site is unavailable.
+Open [install.ivaworks.site](https://install.ivaworks.site/), verify the exact address, and follow the on-screen flow. Installation requests are sent directly from your device to Cloudflare; the token is not relayed through or stored by an IVA server, database, or Telegram. If the website is unavailable, begin the official flow through [@IVAPANELBOT](https://t.me/IVAPANELBOT).
+
+See the [Privacy Policy](../../PRIVACY.md) for the complete architecture and no-storage statement.
 
 ## 4. Remove unnecessary access
 

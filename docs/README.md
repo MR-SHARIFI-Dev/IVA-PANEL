@@ -4,6 +4,10 @@
 
 - [Complete v1 / v2 / v3 Feature Matrix](FEATURE_MATRIX.md)
 - [Machine-readable stable version metadata](../config/version.json)
+- [Official documentation website](https://docs.ivaworks.site/)
+- [Privacy Policy](../PRIVACY.md)
+- [Terms of Service](../TERMS.md)
+- [Release integrity and signing](../SIGNING.md)
 
 ## فارسی
 
@@ -32,6 +36,8 @@
 | `config/links.json` | Single inventory of official IVA links |
 | `config/version.json` | Current stable Worker, panel, and installer versions |
 | `docs/FEATURE_MATRIX.md` | Canonical bilingual v1/v2/v3 capability comparison |
+| `docs/index.html`, `docs/features.html`, `docs/faq.html` | Static trilingual documentation website |
+| `PRIVACY.md`, `TERMS.md`, `SIGNING.md` | Privacy, acceptable use, and release verification |
 | `docs/fa`, `docs/en`, `docs/ru` | Localized FAQ and installation guides |
 | `releases/` | Release-note, checksum, and manifest templates |
 | `scripts/` | Local SHA-256 generation and verification helpers |

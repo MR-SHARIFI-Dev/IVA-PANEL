@@ -47,7 +47,7 @@ Your permission ends automatically if you violate this license. Upon termination
 
 ## 9. Contact and additional permission
 
-For commercial licensing, redistribution, or other written permission, contact the official IVA Works support account listed in [SUPPORT.md](SUPPORT.md). Never send passwords or API tokens.
+For commercial licensing, redistribution, or other written permission, contact IVA Team at `info@ivaworks.site` or use the official support channel listed in [SUPPORT.md](SUPPORT.md). Never send passwords or API tokens.
 
 ## 10. Language
 
@@ -63,4 +63,4 @@ IVA Panel متن‌باز نیست. فقط اجازه دارید نسخهٔ رس
 
 IVA Panel не является открытым исходным кодом. Разрешается установить и использовать неизменённый официальный выпуск в законных личных или внутренних целях. Копирование и распространение, продажа, обратная разработка, модификация, удаление уведомлений о правах и использование бренда IVA без письменного разрешения запрещены. Пользователь отвечает за аккаунты, токены, расходы и соблюдение условий сторонних сервисов. Юридическую силу имеет английский текст выше.
 
-> This template should be reviewed by qualified legal counsel for the jurisdictions in which IVA Team distributes the Software.
+Use of the Software is also subject to the [Terms of Service](TERMS.md) and [Privacy Policy](PRIVACY.md).

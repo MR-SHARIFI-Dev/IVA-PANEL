@@ -23,6 +23,7 @@
   <a href="https://install.ivaworks.site/"><strong>نصب سریع</strong></a> ·
   <a href="../../releases"><strong>دانلود اپ‌ها</strong></a> ·
   <a href="docs/FEATURE_MATRIX.md"><strong>همهٔ قابلیت‌ها</strong></a> ·
+  <a href="https://docs.ivaworks.site/"><strong>وب‌سایت مستندات</strong></a> ·
   <a href="docs/fa/FAQ.md"><strong>FAQ فارسی</strong></a> ·
   <a href="https://net.ivaworks.site/"><strong>رادار شبکه</strong></a> ·
   <a href="https://t.me/Ivaworkersup"><strong>پشتیبانی</strong></a>
@@ -145,6 +146,7 @@
 | بخش | آدرس |
 |---|---|
 | وب‌سایت رسمی | [ivaworks.site](https://ivaworks.site/) |
+| وب‌سایت مستندات | [docs.ivaworks.site](https://docs.ivaworks.site/) |
 | نصب‌کنندهٔ وب | [install.ivaworks.site](https://install.ivaworks.site/) |
 | کانال اطلاع‌رسانی | [@PANEL_ivaworks](https://t.me/PANEL_ivaworks) |
 | ربات نصب پنل | [@IVAPANELBOT](https://t.me/IVAPANELBOT) |
@@ -153,6 +155,7 @@
 | گروه کاربران | [@IVA_Panel_group](https://t.me/IVA_Panel_group) |
 | سؤالات متداول | [FAQ فارسی داخل ریپو](docs/fa/FAQ.md) |
 | رادار اینترنت | [net.ivaworks.site](https://net.ivaworks.site/) |
+| ایمیل رسمی | `info@ivaworks.site` |
 
 ## پشتیبانی و گزارش مشکل
 
@@ -160,6 +163,10 @@
 - برای خطای برنامه از قالب **Bug report** در Issues استفاده کنید؛ هیچ توکن، رمز یا اطلاعات حسابی را پیوست نکنید.
 - برای مشکل نصب یا حساب از [@Ivaworkersup](https://t.me/Ivaworkersup) کمک بگیرید.
 - آسیب‌پذیری امنیتی را عمومی منتشر نکنید؛ روش گزارش در [SECURITY.md](SECURITY.md) آمده است.
+
+## حریم خصوصی و شرایط استفاده
+
+در معماری فعلی، درخواست نصب مستقیماً از دستگاه کاربر به Cloudflare ارسال می‌شود و IVA هیچ API Token، اطلاعات حساب، IP یا لاگ فعالیتی را ذخیره نمی‌کند. جزئیات کامل: [سیاست حریم خصوصی](PRIVACY.md) · [شرایط استفاده](TERMS.md) · [صحت و امضای نسخه‌ها](SIGNING.md).
 
 ## مجوز و مالکیت
 

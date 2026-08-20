@@ -1,5 +1,7 @@
 {
   "officialWebsite": "https://ivaworks.site/",
+  "documentationWebsite": "https://docs.ivaworks.site/",
+  "githubRepository": "https://github.com/MR-SHARIFI-Dev/IVA-PANEL",
   "webInstaller": "https://install.ivaworks.site/",
   "telegramChannel": "https://t.me/PANEL_ivaworks",
   "panelBot": "https://t.me/IVAPANELBOT",
@@ -7,5 +9,9 @@
   "support": "https://t.me/Ivaworkersup",
   "communityGroup": "https://t.me/IVA_Panel_group",
   "faq": "docs/FAQ.md",
-  "networkRadar": "https://net.ivaworks.site/"
+  "networkRadar": "https://net.ivaworks.site/",
+  "email": "info@ivaworks.site",
+  "privacy": "PRIVACY.md",
+  "terms": "TERMS.md",
+  "signing": "SIGNING.md"
 }

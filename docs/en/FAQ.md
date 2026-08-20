@@ -139,6 +139,12 @@ The panel itself does not inherently cause a ban, but infrastructure providers e
 
 [IVA Network Intelligence](https://net.ivaworks.site/) displays observable service status, network tests, latency, and disruptions. It is a diagnostic aid and cannot guarantee the status of every operator or path.
 
+## Privacy
+
+### Does IVA store my token or account information?
+
+No. Installation requests are sent directly from the user's device to Cloudflare. The API Token, Cloudflare email, Account ID, panel address or password, user IP address, and activity logs are not stored in an IVA server, database, bot, or Telegram. The documentation site keeps only language and theme preferences locally in the browser. See the [Privacy Policy](../../PRIVACY.md).
+
 ## Support
 
 ### What should I prepare before reporting a problem?

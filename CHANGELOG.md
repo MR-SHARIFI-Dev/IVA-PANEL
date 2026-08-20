@@ -18,20 +18,11 @@ All notable IVA Panel releases should be documented here. Use [Semantic Versioni
 - Stable release metadata for IVA Worker `4.4.73`, Panel `10.7.59`, and Installer `1.4.9`.
 - v3 National Internet relay, Arvan CDN route optimization, and Google Apps Script relay entries.
 - Removed the retired secondary chat reference; `@IVA_Panel_group` is the only official community group.
-- Added a responsive trilingual GitHub Pages website with feature, FAQ, application, installation, radar, and official-link sections.
-- Added localized GitHub Pages activation guides for Persian, English, and Russian.
+- Final trilingual Privacy Policy and Terms of Service based on the verified direct-to-Cloudflare, no-storage architecture.
+- Public Android signing-certificate fingerprint and release integrity guide.
+- Static documentation site for `docs.ivaworks.site` with legal, security, download, SEO, and cPanel deployment support.
+- Stronger repository and release-integrity validation workflows.
 
 ### Pending
 
-- Final signed application binaries in GitHub Releases.
-- Completed privacy policy based on verified production data handling.
-
-<!-- Example:
-## [2.0.0] - 2026-MM-DD
-### Added
-- ...
-### Changed
-- ...
-### Fixed
-- ...
--->
+- Upload the final Windows installer only after its embedded Authenticode signature is verified.

@@ -23,6 +23,7 @@
   <a href="https://install.ivaworks.site/"><strong>Установка</strong></a> ·
   <a href="../../releases"><strong>Приложения</strong></a> ·
   <a href="docs/FEATURE_MATRIX.md"><strong>Все функции</strong></a> ·
+  <a href="https://docs.ivaworks.site/"><strong>Сайт документации</strong></a> ·
   <a href="docs/ru/FAQ.md"><strong>FAQ</strong></a> ·
   <a href="https://net.ivaworks.site/"><strong>Сетевой радар</strong></a> ·
   <a href="https://t.me/Ivaworkersup"><strong>Поддержка</strong></a>
@@ -123,6 +124,7 @@
 | Ресурс | Адрес |
 |---|---|
 | Официальный сайт | [ivaworks.site](https://ivaworks.site/) |
+| Сайт документации | [docs.ivaworks.site](https://docs.ivaworks.site/) |
 | Веб-установщик | [install.ivaworks.site](https://install.ivaworks.site/) |
 | Канал новостей | [@PANEL_ivaworks](https://t.me/PANEL_ivaworks) |
 | Бот установки панели | [@IVAPANELBOT](https://t.me/IVAPANELBOT) |
@@ -131,6 +133,7 @@
 | Группа пользователей | [@IVA_Panel_group](https://t.me/IVA_Panel_group) |
 | FAQ | [FAQ на русском в этом репозитории](docs/ru/FAQ.md) |
 | Интернет-радар | [net.ivaworks.site](https://net.ivaworks.site/) |
+| Официальная почта | `info@ivaworks.site` |
 
 ## Поддержка и сообщения об ошибках
 
@@ -138,6 +141,10 @@
 - Для ошибок приложений используйте шаблон GitHub **Bug report**; не прикладывайте секреты или данные аккаунта.
 - По вопросам установки или аккаунта обращайтесь к [@Ivaworkersup](https://t.me/Ivaworkersup).
 - Не публикуйте уязвимости открыто; следуйте [SECURITY.md](SECURITY.md).
+
+## Конфиденциальность и условия
+
+В текущей архитектуре запросы установки отправляются напрямую с устройства пользователя в Cloudflare. IVA не хранит API Token, данные аккаунта, IP-адрес пользователя или журналы активности. См. [Политику конфиденциальности](PRIVACY.md), [Условия использования](TERMS.md) и [проверку подписей выпусков](SIGNING.md).
 
 ## Лицензия и права
 

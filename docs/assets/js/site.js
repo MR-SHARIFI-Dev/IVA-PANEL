@@ -1,7 +1,7 @@
 const copy = {
   fa: {
     skip: "رفتن به محتوای اصلی", menuAria: "باز کردن منوی سایت", themeAria: "تغییر پوسته",
-    navOverview: "معرفی", navFeatures: "قابلیت‌ها", navApps: "اپلیکیشن‌ها", navInstall: "نصب", navRadar: "رادار", navFaq: "سؤالات متداول",
+    navOverview: "معرفی", navFeatures: "قابلیت‌ها", navApps: "اپلیکیشن‌ها", navInstall: "نصب", navRadar: "رادار", navFaq: "سؤالات متداول", navDownloads: "دانلودها", navPrivacy: "حریم خصوصی", navTerms: "شرایط استفاده", navSecurity: "امنیت",
     heroEyebrow: "نسخهٔ پایدار در دسترس است", heroName: "آیوا پنل",
     heroLead: "پنل حرفه‌ای مولتی‌لوکیشن بر بستر Cloudflare Workers؛ مدیریت سریع، یکپارچه و هوشمند با اپلیکیشن‌های اختصاصی Windows و Android.",
     installNow: "نصب یک‌کلیکی", allFeatures: "مشاهدهٔ همه قابلیت‌ها", githubRepo: "مخزن GitHub", docsLabel: "مستندات",
@@ -46,7 +46,7 @@ const copy = {
   },
   en: {
     skip: "Skip to main content", menuAria: "Open site menu", themeAria: "Change color theme",
-    navOverview: "Overview", navFeatures: "Features", navApps: "Applications", navInstall: "Install", navRadar: "Radar", navFaq: "FAQ",
+    navOverview: "Overview", navFeatures: "Features", navApps: "Applications", navInstall: "Install", navRadar: "Radar", navFaq: "FAQ", navDownloads: "Downloads", navPrivacy: "Privacy", navTerms: "Terms", navSecurity: "Security",
     heroEyebrow: "Stable release available", heroName: "IVA Panel",
     heroLead: "Professional multi-location management powered by Cloudflare Workers, with a unified workflow and dedicated Windows and Android applications.",
     installNow: "One-click installation", allFeatures: "Explore all features", githubRepo: "GitHub repository", docsLabel: "Documentation",
@@ -91,7 +91,7 @@ const copy = {
   },
   ru: {
     skip: "Перейти к содержанию", menuAria: "Открыть меню сайта", themeAria: "Изменить цветовую тему",
-    navOverview: "Обзор", navFeatures: "Возможности", navApps: "Приложения", navInstall: "Установка", navRadar: "Радар", navFaq: "FAQ",
+    navOverview: "Обзор", navFeatures: "Возможности", navApps: "Приложения", navInstall: "Установка", navRadar: "Радар", navFaq: "FAQ", navDownloads: "Загрузки", navPrivacy: "Конфиденциальность", navTerms: "Условия", navSecurity: "Безопасность",
     heroEyebrow: "Стабильная версия доступна", heroName: "IVA Panel",
     heroLead: "Профессиональное управление несколькими локациями на базе Cloudflare Workers с единым процессом и приложениями для Windows и Android.",
     installNow: "Установка в один клик", allFeatures: "Все возможности", githubRepo: "Репозиторий GitHub", docsLabel: "Документация",
@@ -168,6 +168,9 @@ function applyLanguage(lang, reloadDocs = true) {
     const value = copy[lang][element.dataset.i18nPlaceholder];
     if (value) element.setAttribute("placeholder", value);
   });
+  document.querySelectorAll("[data-lang-content]").forEach((element) => {
+    element.hidden = element.dataset.langContent !== lang;
+  });
   const page = document.body.dataset.page;
   if (page === "faq" && reloadDocs) loadFaq();
   updateFeatureCount();
@@ -182,7 +185,7 @@ function applyTheme(theme) {
 function deriveRepositoryUrl() {
   const host = window.location.hostname;
   const parts = window.location.pathname.split("/").filter(Boolean);
-  if (!host.endsWith("github.io") || !parts.length) return null;
+  if (!host.endsWith("github.io") || !parts.length) return "https://github.com/MR-SHARIFI-Dev/IVA-PANEL";
   const owner = host.slice(0, -".github.io".length);
   return `https://github.com/${owner}/${parts[0]}`;
 }
@@ -195,7 +198,7 @@ function wireRepositoryLinks() {
       link.target = "_blank";
       link.rel = "noopener";
     } else if (link.getAttribute("href") === "#") {
-      link.href = "https://github.com/";
+      link.href = "https://github.com/MR-SHARIFI-Dev/IVA-PANEL";
     }
   });
 }
@@ -212,6 +215,9 @@ function inlineMarkdown(value) {
     const repository = deriveRepositoryUrl();
     let safeHref = /^(https?:\/\/|\.\.?\/|[A-Za-z0-9_/-]+\.md)/.test(href) ? href : "#";
     if (/INSTALLATION\.md/.test(href)) safeHref = `${state.lang}/INSTALLATION.md`;
+    if (/PRIVACY\.md/.test(href)) safeHref = "privacy.html";
+    if (/TERMS\.md/.test(href)) safeHref = "terms.html";
+    if (/SIGNING\.md/.test(href)) safeHref = "downloads.html";
     if (/\.\.\/\.\.\/(README(?:\.[a-z]+)?\.md|SECURITY\.md|LICENSE\.md)/.test(href) && repository) {
       const file = href.split("/").pop();
       safeHref = `${repository}/blob/main/${file}`;

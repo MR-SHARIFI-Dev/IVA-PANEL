@@ -23,6 +23,7 @@
   <a href="https://install.ivaworks.site/"><strong>One-click install</strong></a> ·
   <a href="../../releases"><strong>Download apps</strong></a> ·
   <a href="docs/FEATURE_MATRIX.md"><strong>All features</strong></a> ·
+  <a href="https://docs.ivaworks.site/"><strong>Documentation website</strong></a> ·
   <a href="docs/en/FAQ.md"><strong>FAQ</strong></a> ·
   <a href="https://net.ivaworks.site/"><strong>Network radar</strong></a> ·
   <a href="https://t.me/Ivaworkersup"><strong>Support</strong></a>
@@ -123,6 +124,7 @@ The complete FAQ now lives in this repository and covers installation, security,
 | Resource | Address |
 |---|---|
 | Official website | [ivaworks.site](https://ivaworks.site/) |
+| Documentation website | [docs.ivaworks.site](https://docs.ivaworks.site/) |
 | Web installer | [install.ivaworks.site](https://install.ivaworks.site/) |
 | Announcement channel | [@PANEL_ivaworks](https://t.me/PANEL_ivaworks) |
 | Panel installation bot | [@IVAPANELBOT](https://t.me/IVAPANELBOT) |
@@ -131,6 +133,7 @@ The complete FAQ now lives in this repository and covers installation, security,
 | User group | [@IVA_Panel_group](https://t.me/IVA_Panel_group) |
 | FAQ | [English FAQ in this repository](docs/en/FAQ.md) |
 | Internet radar | [net.ivaworks.site](https://net.ivaworks.site/) |
+| Official email | `info@ivaworks.site` |
 
 ## Support and issue reporting
 
@@ -138,6 +141,10 @@ The complete FAQ now lives in this repository and covers installation, security,
 - Use the GitHub **Bug report** template for app defects; never attach secrets or account data.
 - Contact [@Ivaworkersup](https://t.me/Ivaworkersup) for installation or account help.
 - Do not disclose security vulnerabilities publicly; follow [SECURITY.md](SECURITY.md).
+
+## Privacy and terms
+
+Under the current architecture, installation requests are sent directly from the user's device to Cloudflare. IVA stores no API Token, account information, user IP address, or activity log. See the [Privacy Policy](PRIVACY.md), [Terms of Service](TERMS.md), and [release signing guide](SIGNING.md).
 
 ## License and ownership
 

@@ -244,6 +244,23 @@ code { display: inline-block; max-width: 100%; overflow-wrap: anywhere; color: v
 .faq-document img, .faq-document > p:first-child { display: none; }
 .empty-state { padding: 45px; text-align: center; color: var(--muted); }
 
+.legal-shell { max-width: 980px; }
+.legal-document { padding: 42px; border: 1px solid var(--line); border-radius: 24px; background: var(--surface); box-shadow: var(--shadow); }
+.legal-document[hidden] { display: none; }
+.legal-document h2 { margin: 0 0 10px; font-size: 1.85rem; }
+.legal-document h3 { margin: 34px 0 10px; font-size: 1.05rem; color: var(--text); }
+.legal-document p, .legal-document li { color: var(--muted); font-size: .93rem; line-height: 2; }
+.legal-document a { color: var(--cyan); text-decoration: underline; text-underline-offset: 4px; }
+.legal-document code { padding: 3px 7px; border-radius: 7px; background: rgba(77, 140, 255, .1); }
+.legal-meta { margin: 0 0 28px; padding-bottom: 18px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+.release-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.release-card { padding: 26px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
+.release-card h2 { margin-top: 0; }
+.release-card p { color: var(--muted); }
+.release-card .button { margin-top: 10px; }
+.hash-box { margin: 18px 0 0; padding: 16px; overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; color: var(--cyan); background: rgba(4, 8, 20, .55); direction: ltr; text-align: left; font: .74rem/1.8 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.status-pill { display: inline-flex; align-items: center; gap: 7px; padding: 6px 10px; border: 1px solid rgba(67, 240, 177, .22); border-radius: 999px; color: var(--success); background: rgba(67, 240, 177, .08); font-size: .72rem; font-weight: 800; }
+
 @media (max-width: 1020px) {
   :root { --header-h: 72px; }
   .site-nav { position: fixed; inset: var(--header-h) 20px auto; display: none; padding: 16px; flex-direction: column; align-items: stretch; border: 1px solid var(--line); border-radius: 18px; background: color-mix(in srgb, var(--bg) 92%, transparent); box-shadow: var(--shadow); backdrop-filter: blur(20px); }
@@ -286,6 +303,8 @@ code { display: inline-block; max-width: 100%; overflow-wrap: anywhere; color: v
   .footer-grid, .footer-bottom { align-items: flex-start; flex-direction: column; }
   .doc-toolbar { flex-wrap: wrap; }
   .doc-toolbar input { flex-basis: 100%; }
+  .release-grid { grid-template-columns: 1fr; }
+  .legal-document { padding: 26px; }
 }
 
 @media (max-width: 440px) {
@@ -301,4 +320,3 @@ code { display: inline-block; max-width: 100%; overflow-wrap: anywhere; color: v
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .001ms !important; animation-duration: .001ms !important; animation-iteration-count: 1 !important; }
 }
-
