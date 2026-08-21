@@ -1,0 +1,5 @@
+<svg class="mark" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="IVA">
+  <rect x="0.5" y="0.5" width="25" height="25" rx="7" fill="#171b24" stroke="#232733"/>
+  <path d="M8 18 L13 8 L18 18" stroke="#6e5bff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="13" cy="8" r="1.6" fill="#a99bff"/>
+</svg>

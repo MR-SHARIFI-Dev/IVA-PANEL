@@ -1,0 +1,383 @@
+/* =========================================================
+   IVA — Error Page System
+   Design tokens + layout for hosting-panel error screens
+   (cPanel / DirectAdmin style), branded for IVA.
+   ========================================================= */
+
+:root {
+  /* Color */
+  --iva-ink:        #0a0c10;
+  --iva-panel:       #12151c;
+  --iva-panel-2:     #171b24;
+  --iva-line:        #232733;
+  --iva-line-soft:   #1a1e28;
+  --iva-text:        #e7e9ee;
+  --iva-muted:       #8b93a7;
+  --iva-faint:       #545b6b;
+  --iva-violet:      #6e5bff;
+  --iva-violet-soft: #a99bff;
+  --iva-violet-dim:  rgba(110, 91, 255, 0.14);
+  --iva-amber:       #f5a623;
+  --iva-amber-dim:   rgba(245, 166, 35, 0.14);
+  --iva-red:         #ff5468;
+  --iva-red-dim:     rgba(255, 84, 104, 0.14);
+  --iva-green:       #34d399;
+
+  /* Type */
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  /* Rhythm */
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--iva-ink);
+  color: var(--iva-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(110,91,255,0.10), transparent 45%),
+    radial-gradient(circle at 100% 100%, rgba(110,91,255,0.06), transparent 40%);
+}
+
+a { color: inherit; }
+
+/* ---------- Topbar (panel chrome, cPanel/DirectAdmin-style) ---------- */
+.iva-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 32px;
+  border-bottom: 1px solid var(--iva-line-soft);
+}
+
+.iva-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: var(--iva-text);
+}
+
+.iva-brand .mark {
+  width: 26px; height: 26px;
+  flex: none;
+}
+
+.iva-topbar-meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--iva-faint);
+}
+
+.iva-topbar-meta .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  display: inline-block; margin-right: 6px;
+  background: var(--iva-faint);
+}
+.iva-topbar-meta .dot.ok { background: var(--iva-green); box-shadow: 0 0 8px rgba(52,211,153,.7); }
+.iva-topbar-meta .dot.warn { background: var(--iva-amber); box-shadow: 0 0 8px rgba(245,166,35,.7); }
+.iva-topbar-meta .dot.crit { background: var(--iva-red); box-shadow: 0 0 8px rgba(255,84,104,.7); }
+
+/* ---------- Main stage ---------- */
+.iva-stage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.iva-card {
+  width: 100%;
+  max-width: 760px;
+  background: linear-gradient(180deg, var(--iva-panel), var(--iva-panel-2));
+  border: 1px solid var(--iva-line);
+  border-radius: var(--radius-lg);
+  padding: 44px 48px 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.iva-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent, var(--iva-violet)), transparent);
+  opacity: .7;
+}
+
+/* Eyebrow / status chip row */
+.iva-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.iva-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--accent-dim, var(--iva-violet-dim));
+  color: var(--accent, var(--iva-violet-soft));
+  border: 1px solid color-mix(in srgb, var(--accent, var(--iva-violet)) 35%, transparent);
+}
+
+.iva-code-tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--iva-faint);
+}
+
+/* Pulse monitor (signature element) */
+.iva-pulse {
+  width: 100%;
+  height: 56px;
+  margin-bottom: 8px;
+}
+.iva-pulse path {
+  fill: none;
+  stroke: var(--accent, var(--iva-violet));
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.9;
+}
+.iva-pulse.animated path {
+  stroke-dasharray: 340;
+  stroke-dashoffset: 340;
+  animation: iva-draw 2.6s ease-in-out infinite;
+}
+@keyframes iva-draw {
+  0%   { stroke-dashoffset: 340; }
+  55%  { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -340; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .iva-pulse.animated path { animation: none; stroke-dashoffset: 0; }
+}
+
+/* Hero code */
+.iva-hero {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  margin: 6px 0 4px;
+}
+.iva-hero-code {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(56px, 9vw, 92px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  background: linear-gradient(180deg, var(--iva-text), var(--iva-muted));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.iva-hero-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(18px, 2.4vw, 22px);
+  color: var(--iva-text);
+}
+
+.iva-desc {
+  margin: 18px 0 0;
+  max-width: 54ch;
+  color: var(--iva-muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+/* Meta table: what happened / request id / time */
+.iva-meta {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1px;
+  background: var(--iva-line-soft);
+  border: 1px solid var(--iva-line-soft);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.iva-meta-item {
+  background: var(--iva-panel);
+  padding: 14px 16px;
+}
+.iva-meta-item .label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--iva-faint);
+  margin-bottom: 6px;
+}
+.iva-meta-item .value {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--iva-text);
+  word-break: break-word;
+}
+
+/* Actions */
+.iva-actions {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.iva-btn {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 11px 20px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform .15s ease, border-color .15s ease, background .15s ease;
+}
+.iva-btn.primary {
+  background: var(--accent, var(--iva-violet));
+  color: #0a0c10;
+}
+.iva-btn.primary:hover { transform: translateY(-1px); filter: brightness(1.06); }
+.iva-btn.ghost {
+  background: transparent;
+  border-color: var(--iva-line);
+  color: var(--iva-text);
+}
+.iva-btn.ghost:hover { border-color: var(--iva-faint); }
+
+/* Steps list (troubleshooting) */
+.iva-steps {
+  margin-top: 30px;
+  border-top: 1px solid var(--iva-line-soft);
+  padding-top: 22px;
+}
+.iva-steps h2 {
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--iva-faint);
+  margin: 0 0 14px;
+  font-weight: 600;
+}
+.iva-steps ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: iva-step;
+  display: grid;
+  gap: 10px;
+}
+.iva-steps li {
+  counter-increment: iva-step;
+  display: flex;
+  gap: 12px;
+  font-size: 13.5px;
+  color: var(--iva-muted);
+  line-height: 1.55;
+}
+.iva-steps li::before {
+  content: counter(iva-step, decimal-leading-zero);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent, var(--iva-violet-soft));
+  border: 1px solid var(--iva-line);
+  border-radius: 6px;
+  width: 22px; height: 22px;
+  display: flex; align-items: center; justify-content: center;
+  flex: none;
+}
+
+/* Footer */
+.iva-footer {
+  padding: 20px 32px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--iva-faint);
+  border-top: 1px solid var(--iva-line-soft);
+}
+
+@media (max-width: 560px) {
+  .iva-topbar { padding: 16px 18px; }
+  .iva-card { padding: 30px 22px 26px; }
+  .iva-footer { padding: 16px 18px 22px; flex-direction: column; gap: 6px; align-items: flex-start; }
+  .iva-status-row { flex-wrap: wrap; }
+}
+
+
+/* IVA Pro GitHub Pages Fix */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ min-height:100vh;
+ background:
+ radial-gradient(circle at 15% 15%,rgba(110,91,255,.18),transparent 35%),
+ radial-gradient(circle at 85% 85%,rgba(255,84,104,.12),transparent 35%),
+ #070b18!important;
+ color:#f8fafc;
+}
+.iva-shell,.iva-container,.iva-card{
+ position:relative;
+ z-index:2;
+}
+.iva-brand img,.mark{
+ width:42px;
+ height:42px;
+ object-fit:contain;
+}
+.iva-code{
+ font-weight:800!important;
+ letter-spacing:-.06em;
+ text-shadow:0 0 35px var(--accent, #6e5bff);
+}
+.iva-card{
+ backdrop-filter:blur(18px);
+ -webkit-backdrop-filter:blur(18px);
+ background:rgba(15,23,42,.72)!important;
+ border:1px solid rgba(255,255,255,.12)!important;
+ box-shadow:0 25px 80px rgba(0,0,0,.35);
+}
+img{max-width:100%}

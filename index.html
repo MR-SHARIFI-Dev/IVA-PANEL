@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IVA — قالب صفحات خطا</title>
+<meta name="description" content="مجموعه صفحات خطای برندشده IVA برای cPanel و DirectAdmin">
+<link rel="icon" href="assets/img/iva-mark.svg">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/iva-error.css">
+<style>
+  html, body { direction: rtl; }
+  .iva-stage { align-items: flex-start; padding-top: 64px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+    margin-top: 30px;
+  }
+  .tile {
+    display: block;
+    text-decoration: none;
+    background: var(--iva-panel);
+    border: 1px solid var(--iva-line);
+    border-radius: var(--radius-md);
+    padding: 18px 20px;
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  .tile:hover { border-color: var(--iva-violet); transform: translateY(-2px); }
+  .tile .code {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--iva-text);
+  }
+  .tile .label {
+    display: block;
+    margin-top: 4px;
+    font-size: 13px;
+    color: var(--iva-muted);
+  }
+</style>
+</head>
+<body>
+
+<header class="iva-topbar">
+  <a class="iva-brand" href="index.html">
+    <img class="mark" src="assets/img/iva-mark.svg" alt="">
+    IVA
+  </a>
+  <div class="iva-topbar-meta">
+    <span><span class="dot ok"></span>قالب صفحات خطا</span>
+  </div>
+</header>
+
+<main class="iva-stage">
+  <section class="iva-card" style="max-width:820px;">
+    <span class="iva-chip">IVA Error Page Kit</span>
+    <div class="iva-hero" style="margin-top:18px;">
+      <span class="iva-hero-title" style="font-size:26px;">مجموعه صفحات خطای برندشده IVA</span>
+    </div>
+    <p class="iva-desc">
+      مجموعه‌ای حرفه‌ای از صفحات خطا با هویت بصری یکپارچه IVA، مناسب برای جایگزینی صفحات پیش‌فرض
+      cPanel و DirectAdmin. هر صفحه مستقل، ریسپانسیو و بدون وابستگی به فریم‌ورک است.
+    </p>
+
+    <div class="grid">
+      <a class="tile" href="pages/400.html"><span class="code">400</span><span class="label">درخواست نامعتبر</span></a>
+      <a class="tile" href="pages/401.html"><span class="code">401</span><span class="label">نیاز به احراز هویت</span></a>
+      <a class="tile" href="pages/403.html"><span class="code">403</span><span class="label">دسترسی مسدود</span></a>
+      <a class="tile" href="pages/404.html"><span class="code">404</span><span class="label">صفحه پیدا نشد</span></a>
+      <a class="tile" href="pages/500.html"><span class="code">500</span><span class="label">خطای داخلی سرور</span></a>
+      <a class="tile" href="pages/502.html"><span class="code">502</span><span class="label">گیت‌وی نامعتبر</span></a>
+      <a class="tile" href="pages/503.html"><span class="code">503</span><span class="label">سرویس در دسترس نیست</span></a>
+      <a class="tile" href="pages/504.html"><span class="code">504</span><span class="label">پایان زمان گیت‌وی</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="iva-footer">
+  <span>IVA Hosting Panel &copy; 2026</span>
+  <span>error-page-kit · v1.0</span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>502 گیت‌وی نامعتبر — IVA</title>
+<meta name="description" content="سرور به‌عنوان یک گیت‌وی، پاسخ نامعتبری از سرور بالادستی دریافت کرد.">
+<link rel="icon" href="../assets/img/iva-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/iva-error.css?v=2">
+<style>
+  html, body { direction: rtl; }
+  .iva-steps li::before { margin-inline-end: 0; }
+</style>
+</head>
+<body style="--accent:var(--iva-red); --accent-dim:var(--iva-red-dim);">
+
+<header class="iva-topbar">
+  <a class="iva-brand" href="../index.html">
+    <img class="mark" src="../assets/img/iva-mark.svg" alt="">
+    IVA
+  </a>
+  <div class="iva-topbar-meta">
+    <span><span class="dot crit"></span>قطع ارتباط</span>
+    <span data-iva-time>—</span>
+  </div>
+</header>
+
+<main class="iva-stage">
+  <section class="iva-card" style="--accent:var(--iva-red); --accent-dim:var(--iva-red-dim);">
+    <svg class="iva-pulse animated" viewBox="0 0 700 56" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 28 L180 28 L195 14 L210 40 L225 28 L280 28 M420 28 L475 28 L490 42 L505 16 L520 28 L700 28"/>
+    </svg>
+
+    <div class="iva-status-row">
+      <span class="iva-chip">Bad Gateway</span>
+      <span class="iva-code-tag">HTTP 502</span>
+    </div>
+
+    <div class="iva-hero">
+      <span class="iva-hero-code">502</span>
+      <span class="iva-hero-title">گیت‌وی نامعتبر</span>
+    </div>
+
+    <p class="iva-desc">سرور میانی نتوانست پاسخ معتبری از سرویس‌دهنده‌ی اصلی دریافت کند. این معمولاً یک مشکل موقت در ارتباط بین سرویس‌هاست.</p>
+
+    <div class="iva-meta">
+      <div class="iva-meta-item">
+        <span class="label">وضعیت</span>
+        <span class="value">قطع گیت‌وی</span>
+      </div>
+      <div class="iva-meta-item">
+        <span class="label">زمان</span>
+        <span class="value" data-iva-time>—</span>
+      </div>
+      <div class="iva-meta-item">
+        <span class="label">شناسه درخواست</span>
+        <span class="value" data-iva-reqid></span>
+      </div>
+      <div class="iva-meta-item">
+        <span class="label">سرویس</span>
+        <span class="value">iva-edge / panel</span>
+      </div>
+    </div>
+
+    <div class="iva-actions">
+      <a class="iva-btn primary" href="../index.html">بازگشت به صفحه اصلی</a>
+      <a class="iva-btn ghost" href="mailto:support@iva.example">تماس با پشتیبانی</a>
+    </div>
+
+    <div class="iva-steps">
+      <h2>چه کاری می‌توانید انجام دهید</h2>
+      <ol>
+        <li>چند لحظه صبر کنید و صفحه را دوباره بارگذاری کنید.</li>
+        <li>اگر پشت CDN یا پروکسی هستید، تنظیمات اتصال به مبدأ را بررسی کنید.</li>
+        <li>در صورت تداوم مشکل، وضعیت سرویس‌های بالادستی را با پشتیبانی چک کنید.</li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer class="iva-footer">
+  <span>IVA Hosting Panel &copy; 2026</span>
+  <span>error/502 · build iva-ep-1.0</span>
+</footer>
+
+<script src="../assets/js/iva-error.js?v=2"></script>
+</body>
+</html>

@@ -1,181 +1,114 @@
 <p align="center">
-  <img src="assets/posters/iva-panel-hero-v2.png" alt="IVA | آیوا" width="100%">
+<img src="./assets/logo.svg" width="120">
+</p>
+
+# IVA Error Pages
+
+Modern customizable error pages by **IVA Works**.
+
+🌐 https://ivaworks.site  
+📧 info@ivaworks.site
+
+<img src="./assets/iva-pro-banner.png" width="100%">
+
+<p align="center">
+<img src="assets/img/iva-banner.svg" alt="IVA Error Pages Banner" width="100%">
 </p>
 
 <p align="center">
-  <a href="README.md">فارسی</a> ·
-  <a href="README.en.md">English</a> ·
-  <a href="README.ru.md">Русский</a>
+<b>Professional branded error page kit for cPanel, DirectAdmin and custom servers.</b>
 </p>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/badge/license-Proprietary-7c3aed">
-  <img alt="Cloudflare Workers" src="https://img.shields.io/badge/platform-Cloudflare%20Workers-f38020">
-  <img alt="Windows" src="https://img.shields.io/badge/Windows-x64-2563eb">
-  <img alt="Android" src="https://img.shields.io/badge/Android-10%2B-22c55e">
-  <img alt="Languages" src="https://img.shields.io/badge/docs-FA%20%7C%20EN%20%7C%20RU-06b6d4">
-  <img alt="IVA Worker" src="https://img.shields.io/badge/IVA%20Worker-4.4.73-8b5cf6">
-  <img alt="Panel" src="https://img.shields.io/badge/Panel-10.7.59-0ea5e9">
-  <img alt="Installer" src="https://img.shields.io/badge/Installer-1.4.9-14b8a6">
+<img src="https://img.shields.io/badge/status-production-success">
+<img src="https://img.shields.io/badge/license-MIT-blue">
+<img src="https://img.shields.io/badge/framework-none-orange">
 </p>
 
-<p align="center">
-  <a href="https://install.ivaworks.site/"><strong>نصب سریع</strong></a> ·
-  <a href="../../releases"><strong>دانلود اپ‌ها</strong></a> ·
-  <a href="docs/FEATURE_MATRIX.md"><strong>همهٔ قابلیت‌ها</strong></a> ·
-  <a href="https://docs.ivaworks.site/"><strong>وب‌سایت مستندات</strong></a> ·
-  <a href="https://github.com/MR-SHARIFI-Dev/IVA-PANEL/wiki"><strong>Wiki</strong></a> ·
-  <a href="docs/fa/FAQ.md"><strong>FAQ فارسی</strong></a> ·
-  <a href="https://net.ivaworks.site/"><strong>رادار شبکه</strong></a> ·
-  <a href="https://t.me/Ivaworkersup"><strong>پشتیبانی</strong></a>
-</p>
+# IVA Error Page Kit
 
-<div dir="rtl" align="right">
+مجموعه‌ای حرفه‌ای و برندشده از صفحات خطا (Error Pages) برای هاست‌های مبتنی بر **cPanel** و **DirectAdmin**، با هویت بصری برند **IVA**.
 
-# IVA Panel | آیوا پنل
+پیش‌نمایش زنده: فایل `index.html` را در مرورگر باز کنید یا با GitHub Pages منتشر کنید.
 
-مرکز رسمی مستندات، دانلودها و انتشار نسخه‌های **IVA Panel**؛ پنل حرفه‌ای مولتی‌لوکیشن بر بستر Cloudflare Workers برای مدیریت سریع، ساده و یکپارچهٔ لوکیشن‌های مختلف.
+## صفحات موجود
 
-> این ریپو مرکز رسمی توزیع و مستندات است. سورس اختصاصی IVA Panel در این مخزن منتشر نمی‌شود.
+| کد | عنوان | فایل |
+|----|-------|------|
+| 400 | Bad Request | `pages/400.html` |
+| 401 | Unauthorized | `pages/401.html` |
+| 403 | Forbidden | `pages/403.html` |
+| 404 | Not Found | `pages/404.html` |
+| 500 | Internal Server Error | `pages/500.html` |
+| 502 | Bad Gateway | `pages/502.html` |
+| 503 | Service Unavailable | `pages/503.html` |
+| 504 | Gateway Timeout | `pages/504.html` |
 
-## چرا IVA Panel؟
+## ساختار پروژه
 
-| قابلیت | توضیح |
-|---|---|
-| ☁️ معماری Cloudflare Workers | اجرای پنل بدون نیاز به VPS جداگانه برای خود پنل |
-| 🌍 Multi-Location | مدیریت چند لوکیشن و زیرساخت از یک داشبورد یکپارچه |
-| ⚡ نصب یک‌کلیکی | نصب از طریق وب یا ربات رسمی Telegram |
-| 💾 Backup & Restore | پشتیبان‌گیری، بازیابی و مهاجرت کامل تنظیمات |
-| 🤖 مدیریت Telegram | نصب و عملیات مدیریتی از مسیر رسمی ربات |
-| 🖥 اپ‌های اختصاصی | Android 10+ و Windows x64 |
-| 📡 Network Intelligence | رادار زندهٔ وضعیت، تأخیر و اختلال شبکه |
-| 🌐 مستندات سه‌زبانه | فارسی، English و Русский داخل همین ریپو |
+```
+iva-error-pages/
+├── index.html              # گالری/پیش‌نمایش همه صفحات
+├── pages/                  # صفحات خطا (400 تا 504)
+├── assets/
+│   ├── css/iva-error.css   # سیستم طراحی و توکن‌های برند
+│   ├── js/iva-error.js     # زمان و شناسه‌ی درخواست
+│   └── img/iva-mark.svg    # لوگوی برند
+├── LICENSE
+└── README.md
+```
 
-## نسخهٔ پایدار فعلی
+هر صفحه کاملاً مستقل، بدون وابستگی به فریم‌ورک، ریسپانسیو و سازگار با `prefers-reduced-motion` است.
 
-| IVA Worker | Panel | Installer | کانال | انتشار UTC | حداقل نسخه |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| `4.4.73` | `10.7.59` | `1.4.9` | `stable` | `2026-08-17 19:55` | `4.4.55` |
+## نصب روی cPanel
 
-این به‌روزرسانی اجباری نیست. فهرست کامل بیش از صد قابلیت و مقایسهٔ v1، v2 و v3 در **[Feature Matrix رسمی](docs/FEATURE_MATRIX.md)** قرار دارد؛ از جمله Relay اینترنت ملی، Arvan CDN و Google Apps Script در v3.
+1. وارد بخش **File Manager** در cPanel شوید.
+2. پوشه‌ی `assets` و فایل‌های داخل `pages` را داخل `public_html` (یا مسیر دامنه‌ی موردنظر) آپلود کنید.
+3. از منوی cPanel به بخش **Error Pages** بروید.
+4. برای هر کد خطا (403، 404، 500 و ...) گزینه‌ی ویرایش را بزنید و محتوای فایل متناظر در `pages/` را جایگزین کنید،
+   یا در تنظیمات وب‌سرور (Apache/`.htaccess`) مسیر را مستقیم مشخص کنید:
 
-## نصب سریع
+```apache
+ErrorDocument 404 /pages/404.html
+ErrorDocument 403 /pages/403.html
+ErrorDocument 500 /pages/500.html
+ErrorDocument 502 /pages/502.html
+ErrorDocument 503 /pages/503.html
+ErrorDocument 504 /pages/504.html
+```
 
-1. یک حساب Cloudflare با ایمیلی بسازید که به آن دسترسی دارید و آن را تأیید کنید.
-2. در Cloudflare یک **API Token محدود و موقت** بسازید؛ از Global API Key استفاده نکنید.
-3. [نصب‌کنندهٔ رسمی وب](https://install.ivaworks.site/) یا ربات [@IVAPANELBOT](https://t.me/IVAPANELBOT) را باز کنید.
-4. توکن را فقط در یکی از همین دو مسیر رسمی وارد کنید و گزینهٔ ساخت پنل را بزنید.
-5. آدرس پنل و رمز عبور را در محل امن ذخیره کنید.
-6. بعد از نصب، توکن را از Cloudflare لغو یا تعویض کنید.
+## نصب روی DirectAdmin
 
-راهنمای کامل و تصویریِ قابل تکمیل: [راهنمای نصب فارسی](docs/fa/INSTALLATION.md)
+1. فایل‌ها را از طریق **File Manager** یا FTP در دایرکتوری `domains/yourdomain.com/public_html` قرار دهید.
+2. از بخش **Advanced Features → Error Pages** صفحه‌ی موردنظر را انتخاب و مسیر فایل جدید را ثبت کنید،
+   یا مشابه بالا از `ErrorDocument` در `.htaccess` استفاده کنید.
 
-> **هشدار امنیتی:** توکن Cloudflare، رمز پنل یا فایل تنظیمات خصوصی را در Issue، گروه یا کانال عمومی ارسال نکنید. فقط حداقل دسترسی لازم را به توکن بدهید.
+## سفارشی‌سازی برند
 
-## اپلیکیشن‌ها
+تمام رنگ‌ها، فونت‌ها و شعاع گوشه‌ها به‌صورت متغیرهای CSS در ابتدای فایل
+`assets/css/iva-error.css` تعریف شده‌اند:
 
-فایل‌های اصلی از صفحهٔ [GitHub Releases](../../releases) منتشر می‌شوند؛ فایل اجرایی را داخل سورس ریپو قرار ندهید.
+```css
+:root {
+  --iva-violet: #6e5bff;   /* رنگ اصلی برند */
+  --iva-amber:  #f5a623;   /* هشدارهای ۴xx */
+  --iva-red:    #ff5468;   /* خطاهای بحرانی ۵xx */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+```
 
-| پلتفرم | فایل پیشنهادی | مناسب برای |
-|---|---|---|
-| Android 10 به بالا | `app-universal-release.apk` | نسخهٔ Universal برای معماری‌های رایج |
-| Windows 64-bit | `IVA-VPN-1.0.1-Setup.exe` | فقط سیستم‌های x64؛ نسخهٔ ۳۲ بیتی ارائه نمی‌شود |
+آدرس ایمیل پشتیبانی (`support@iva.example`) و لینک بازگشت به صفحه‌ی اصلی
+در هر فایل HTML، داخل بخش `.iva-actions`، قابل ویرایش است.
 
-[راهنمای Android](apps/android/README.md) · [راهنمای Windows](apps/windows/README.md)
+## لایسنس
 
-</div>
+MIT — به‌صورت آزاد قابل استفاده و ویرایش در پروژه‌های شخصی و تجاری.
 
-<p align="center">
-  <img src="assets/posters/iva-apps-showcase-v2.png" alt="IVA | آیوا apps for Windows and Android" width="100%">
-</p>
+## 🚀 Live Demo
 
-<div dir="rtl" align="right">
+Try IVA Error Pages online:
 
-## تصاویر واقعی اپلیکیشن
+https://ivaworks.site
 
-### Windows 64-bit
-
-</div>
-
-<p align="center">
-  <img src="assets/screenshots/windows/windows-home-redacted.png" alt="IVA VPN for Windows" width="82%">
-</p>
-
-<div dir="rtl" align="right">
-
-### Android 10+ — حالت تاریک و روشن
-
-</div>
-
-<p align="center">
-  <img src="assets/screenshots/android/android-dark-redacted.png" alt="IVA VPN Android dark theme" width="39%">
-  <img src="assets/screenshots/android/android-light-redacted.png" alt="IVA VPN Android light theme" width="39%">
-</p>
-
-<div dir="rtl" align="right">
-
-## IVA Network Intelligence
-
-رادار زندهٔ اینترنت IVA وضعیت لحظه‌ای سرویس‌ها، تست مستقیم از ایران و جهان، ترافیک، تأخیر و اختلال‌های شبکه را نمایش می‌دهد.
-
-**[باز کردن رادار](https://net.ivaworks.site/)**
-
-</div>
-
-<p align="center">
-  <img src="assets/posters/iva-network-radar-v2.png" alt="IVA | آیوا Network Intelligence" width="100%">
-</p>
-
-<div dir="rtl" align="right">
-
-## FAQ داخلی و سه‌زبانه
-
-سؤالات متداول کامل دیگر به سایت بیرونی وابسته نیست و همراه همین ریپو نگهداری می‌شود: نصب و امنیت، Multi-Location، Backup/Restore، اپلیکیشن‌ها، Relay، Request، محدودیت‌ها و مسیرهای پشتیبانی.
-
-**[باز کردن FAQ فارسی](docs/fa/FAQ.md)** · [English](docs/en/FAQ.md) · [Русский](docs/ru/FAQ.md)
-
-</div>
-
-<p align="center">
-  <a href="docs/fa/FAQ.md"><img src="assets/posters/iva-faq-v2.png" alt="IVA | آیوا FAQ" width="100%"></a>
-</p>
-
-<div dir="rtl" align="right">
-
-## لینک‌های رسمی
-
-| بخش | آدرس |
-|---|---|
-| وب‌سایت رسمی | [ivaworks.site](https://ivaworks.site/) |
-| وب‌سایت مستندات | [docs.ivaworks.site](https://docs.ivaworks.site/) |
-| GitHub Wiki | [راهنمای کامل IVA Panel](https://github.com/MR-SHARIFI-Dev/IVA-PANEL/wiki) |
-| نصب‌کنندهٔ وب | [install.ivaworks.site](https://install.ivaworks.site/) |
-| کانال اطلاع‌رسانی | [@PANEL_ivaworks](https://t.me/PANEL_ivaworks) |
-| ربات نصب پنل | [@IVAPANELBOT](https://t.me/IVAPANELBOT) |
-| ربات IVA Mailer | [@IVAmailbot](https://t.me/IVAmailbot) |
-| پشتیبانی | [@Ivaworkersup](https://t.me/Ivaworkersup) |
-| گروه کاربران | [@IVA_Panel_group](https://t.me/IVA_Panel_group) |
-| سؤالات متداول | [FAQ فارسی داخل ریپو](docs/fa/FAQ.md) |
-| رادار اینترنت | [net.ivaworks.site](https://net.ivaworks.site/) |
-| ایمیل رسمی | `info@ivaworks.site` |
-
-## پشتیبانی و گزارش مشکل
-
-- ابتدا [FAQ فارسی](docs/fa/FAQ.md) را بخوانید.
-- برای خطای برنامه از قالب **Bug report** در Issues استفاده کنید؛ هیچ توکن، رمز یا اطلاعات حسابی را پیوست نکنید.
-- برای مشکل نصب یا حساب از [@Ivaworkersup](https://t.me/Ivaworkersup) کمک بگیرید.
-- آسیب‌پذیری امنیتی را عمومی منتشر نکنید؛ روش گزارش در [SECURITY.md](SECURITY.md) آمده است.
-
-## حریم خصوصی و شرایط استفاده
-
-در معماری فعلی، درخواست نصب مستقیماً از دستگاه کاربر به Cloudflare ارسال می‌شود و IVA هیچ API Token، اطلاعات حساب، IP یا لاگ فعالیتی را ذخیره نمی‌کند. جزئیات کامل: [سیاست حریم خصوصی](PRIVACY.md) · [شرایط استفاده](TERMS.md) · [صحت و امضای نسخه‌ها](SIGNING.md).
-
-## مجوز و مالکیت
-
-این پروژه **متن‌باز نیست**. تمام حقوق کد، باینری‌ها، نام، لوگو و محتوای اختصاصی برای IVA Team محفوظ است. دریافت یا استفاده از نسخه‌ها به معنی دریافت حق کپی، بازنشر، فروش، مهندسی معکوس یا ساخت نسخهٔ مشتق نیست. متن کامل: [LICENSE.md](LICENSE.md).
-
-Cloudflare و نام‌ها/علائم مربوط به آن متعلق به مالکانشان هستند. IVA Works وابسته یا مورد تأیید Cloudflare نیست.
-
-© 2026 IVA Team — All Rights Reserved.
-
-</div>
+Demo pages are available in the `demo/` directory and can be deployed with GitHub Pages.
